@@ -34,18 +34,18 @@ function Stats() {
 
             <div
               key={index}
-              className="bg-slate-50 rounded-xl shadow-lg p-8 text-center hover:-translate-y-2 transition duration-300"
+              className="bg-white rounded-xl shadow-xl hover:shadow-2xl p-8 text-center hover:-translate-y-2 transition duration-300"
             >
 
-              <div className="text-5xl text-amber-500 flex justify-center mb-5">
+              <div className="text-5xl text-purple-600 flex justify-center mb-5">
                 {item.icon}
               </div>
 
-              <h2 className="text-4xl font-bold text-slate-800">
+              <h2 className="text-4xl font-bold text-slate-900">
                 {item.number}
               </h2>
 
-              <p className="text-gray-600 mt-2">
+              <p className="text-gray-700 mt-2">
                 {item.title}
               </p>
 

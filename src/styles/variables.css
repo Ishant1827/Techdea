@@ -1,0 +1,14 @@
+:root {
+  --primary: #7C3AED;
+  --primary-dark: #6D28D9;
+  --secondary: #A855F7;
+
+  --bg-light: #FFFFFF;
+  --bg-dark: #0F0F1A;
+
+  --card-light: #F9FAFB;
+  --card-dark: #1A1A2E;
+
+  --text-light: #111827;
+  --text-dark: #FFFFFF;
+}

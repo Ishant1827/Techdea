@@ -57,21 +57,21 @@ function ServicesPreview() {
   ];
 
   return (
-    <section className="py-24 bg-slate-100">
+    <section className="py-24 bg-white">
 
       <div className="max-w-7xl mx-auto px-8">
 
         <div className="text-center">
 
-          <p className="text-amber-500 font-semibold uppercase tracking-widest">
+          <p className="text-purple-600 font-semibold uppercase tracking-widest">
             Our Services
           </p>
 
-          <h2 className="text-5xl font-bold text-slate-800 mt-3">
+          <h2 className="text-5xl font-bold text-slate-900 mt-3">
             What We Offer
           </h2>
 
-          <p className="text-gray-600 mt-5 max-w-3xl mx-auto">
+          <p className="text-gray-700 mt-5 max-w-3xl mx-auto">
             We provide professional IT services, technical training,
             career mentoring and software development solutions
             designed for students, startups and businesses.
@@ -85,18 +85,18 @@ function ServicesPreview() {
 
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-3 transition duration-300"
+              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-3 transition duration-300"
             >
 
-              <div className="text-5xl text-amber-500 mb-6">
+              <div className="text-5xl text-purple-600 mb-6">
                 {service.icon}
               </div>
 
-              <h3 className="text-2xl font-bold text-slate-800">
+              <h3 className="text-2xl font-bold text-slate-900">
                 {service.title}
               </h3>
 
-              <p className="text-gray-600 mt-4 leading-7">
+              <p className="text-gray-700 mt-4 leading-7">
                 {service.desc}
               </p>
 
@@ -110,7 +110,7 @@ function ServicesPreview() {
 
           <NavLink
             to="/services"
-            className="bg-amber-500 hover:bg-orange-500 text-white px-8 py-3 rounded-lg font-semibold transition"
+            className="bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-lg font-semibold transition"
           >
             View All Services
           </NavLink>

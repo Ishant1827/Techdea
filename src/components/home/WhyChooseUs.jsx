@@ -47,15 +47,15 @@ function WhyChooseUs() {
 
         <div className="text-center">
 
-          <p className="text-amber-500 uppercase tracking-widest font-semibold">
+          <p className="text-purple-600 uppercase tracking-widest font-semibold">
             Why Choose Techdea
           </p>
 
-          <h2 className="text-5xl font-bold text-slate-800 mt-3">
+          <h2 className="text-5xl font-bold text-slate-900 mt-3">
             Building Skills. Creating Opportunities.
           </h2>
 
-          <p className="text-gray-600 mt-5 max-w-3xl mx-auto">
+          <p className="text-gray-700 mt-5 max-w-3xl mx-auto">
             We believe technology should be practical, accessible and
             career-oriented. Our goal is to help students and businesses
             achieve success through innovation.
@@ -69,18 +69,18 @@ function WhyChooseUs() {
 
             <div
               key={index}
-              className="bg-slate-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-2 transition duration-300"
             >
 
-              <div className="text-5xl text-amber-500 mb-6">
+              <div className="text-5xl text-purple-600 mb-6">
                 {feature.icon}
               </div>
 
-              <h3 className="text-2xl font-bold text-slate-800">
+              <h3 className="text-2xl font-bold text-slate-900">
                 {feature.title}
               </h3>
 
-              <p className="text-gray-600 mt-4 leading-7">
+              <p className="text-gray-700 mt-4 leading-7">
                 {feature.desc}
               </p>
 

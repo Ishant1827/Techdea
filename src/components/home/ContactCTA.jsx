@@ -5,7 +5,7 @@ function ContactCTA() {
     <section className="py-24 bg-gradient-to-r from-[#0B1120] to-[#1E293B] text-white">
       <div className="max-w-6xl mx-auto px-8 text-center">
 
-        <p className="uppercase tracking-widest text-amber-400 font-semibold">
+        <p className="uppercase tracking-widest text-purple-400 font-semibold">
           Let's Build Something Amazing
         </p>
 
@@ -23,14 +23,14 @@ function ContactCTA() {
 
           <NavLink
             to="/contact"
-            className="bg-amber-500 hover:bg-orange-500 px-8 py-4 rounded-lg font-semibold transition"
+            className="bg-purple-700 hover:bg-purple-800 px-8 py-4 rounded-lg font-semibold transition"
           >
             Contact Us
           </NavLink>
 
           <NavLink
             to="/projects"
-            className="border border-amber-500 px-8 py-4 rounded-lg hover:bg-amber-500 transition"
+            className="border border-purple-500 px-8 py-4 rounded-lg hover:bg-purple-700 transition"
           >
             View Projects
           </NavLink>

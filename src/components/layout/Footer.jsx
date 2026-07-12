@@ -7,11 +7,11 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/favicon.svg";
 
 function Footer() {
   return (
-    <footer className="bg-[#0B1120] text-white pt-16">
+    <footer className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white pt-16">
 
       <div className="max-w-7xl mx-auto px-8">
 
@@ -32,7 +32,7 @@ function Footer() {
               <div>
 
                 <h2 className="text-3xl font-bold">
-                  Tech<span className="text-amber-400">dea</span>
+                  Tech<span className="text-purple-600">dea</span>
                 </h2>
 
                 <p className="text-gray-400 text-sm">
@@ -104,17 +104,17 @@ function Footer() {
             <div className="space-y-5">
 
               <p className="flex items-center gap-3">
-                <FaPhoneAlt className="text-amber-400" />
+                <FaPhoneAlt className="text-purple-600" />
                 +91 9369907885
               </p>
 
               <p className="flex items-center gap-3">
-                <FaEnvelope className="text-amber-400" />
+                <FaEnvelope className="text-purple-600" />
                 ishantsri1827@gmail.com
               </p>
 
               <p className="flex items-center gap-3">
-                <FaMapMarkerAlt className="text-amber-400" />
+                <FaMapMarkerAlt className="text-purple-600" />
                 Uttar Pradesh, India
               </p>
 
@@ -124,7 +124,7 @@ function Footer() {
                   href="https://github.com/Ishant1827"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-2xl hover:text-amber-400 transition"
+                  className="text-2xl hover:text-purple-600 transition"
                 >
                   <FaGithub />
                 </a>
@@ -133,7 +133,7 @@ function Footer() {
                   href="https://www.linkedin.com/in/ishantsrivastava/"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-2xl hover:text-amber-400 transition"
+                  className="text-2xl hover:text-purple-600 transition"
                 >
                   <FaLinkedin />
                 </a>
@@ -154,8 +154,8 @@ function Footer() {
             © 2026 Techdea. All Rights Reserved.
           </p>
 
-          <p className="mt-2 text-gray-500">
-            Designed & Developed by <span className="text-amber-400">Ishant Srivastava</span>
+          <p className="mt-2 text-gray-600">
+            Designed & Developed by <span className="text-purple-500">Ishant Srivastava</span>
           </p>
 
         </div>

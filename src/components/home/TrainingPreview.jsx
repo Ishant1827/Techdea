@@ -26,11 +26,11 @@ function TrainingPreview() {
   ];
 
   return (
-    <section className="py-24 bg-[#0B1120] text-white">
+    <section className="py-24 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white">
       <div className="max-w-7xl mx-auto px-8">
 
         <div className="text-center">
-          <p className="text-amber-400 uppercase tracking-widest font-semibold">
+          <p className="text-purple-400 uppercase tracking-widest font-semibold">
             Training & Mentorship
           </p>
 
@@ -54,7 +54,7 @@ function TrainingPreview() {
               className="bg-slate-800 rounded-2xl p-8 hover:-translate-y-2 transition duration-300"
             >
 
-              <div className="text-5xl text-amber-400 mb-5">
+              <div className="text-5xl text-purple-400 mb-5">
                 {item.icon}
               </div>
 
@@ -76,7 +76,7 @@ function TrainingPreview() {
 
           <NavLink
             to="/training"
-            className="bg-amber-500 hover:bg-orange-500 px-8 py-3 rounded-lg font-semibold transition"
+            className="bg-purple-700 hover:bg-purple-800 px-8 py-3 rounded-lg font-semibold transition"
           >
             Explore Training
           </NavLink>

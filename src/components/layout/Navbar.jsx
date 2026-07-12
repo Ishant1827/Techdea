@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import logo from "../../assets/images/logo.png";
+import logo from "../../assets/images/favicon.svg";
 
 function Navbar() {
   const navLinks = [
@@ -13,7 +13,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#0B1120] shadow-lg">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 shadow-xl hover:shadow-2xl">
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-20 px-8">
 
         {/* Logo */}
@@ -27,7 +27,7 @@ function Navbar() {
 
           <div>
             <h1 className="text-2xl font-bold text-white">
-              Tech<span className="text-amber-400">dea</span>
+              Tech<span className="text-purple-700">dea</span>
             </h1>
 
             <p className="text-xs text-gray-400">
@@ -50,8 +50,8 @@ function Navbar() {
                 className={({ isActive }) =>
                   `transition duration-300 font-medium ${
                     isActive
-                      ? "text-amber-400"
-                      : "text-white hover:text-amber-400"
+                      ? "text-purple-600"
+                      : "text-white hover:text-purple-600"
                   }`
                 }
               >
@@ -68,7 +68,7 @@ function Navbar() {
 
         <NavLink
           to="/login"
-          className="bg-amber-500 hover:bg-orange-500 px-5 py-2 rounded-lg text-white font-medium transition duration-300"
+          className="bg-purple-700 hover:bg-purple-800 px-5 py-2 rounded-lg text-white font-medium transition duration-300"
         >
           Login
         </NavLink>

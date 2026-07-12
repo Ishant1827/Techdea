@@ -43,13 +43,13 @@ function ProjectsPreview() {
   ];
 
   return (
-    <section className="py-24 bg-[#0B1120] text-white">
+    <section className="py-24 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white">
 
       <div className="max-w-7xl mx-auto px-8">
 
         <div className="text-center">
 
-          <p className="uppercase tracking-widest text-amber-400 font-semibold">
+          <p className="uppercase tracking-widest text-purple-400 font-semibold">
             Featured Projects
           </p>
 
@@ -75,13 +75,13 @@ function ProjectsPreview() {
 
               <div className="h-40 bg-slate-700 rounded-xl flex items-center justify-center mb-6">
 
-                <h3 className="text-2xl font-bold text-amber-400">
+                <h3 className="text-2xl font-bold text-purple-400">
                   {project.title}
                 </h3>
 
               </div>
 
-              <p className="text-amber-400 text-sm">
+              <p className="text-purple-400 text-sm">
                 {project.tech}
               </p>
 
@@ -93,7 +93,7 @@ function ProjectsPreview() {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 mt-6 bg-amber-500 hover:bg-orange-500 px-5 py-2 rounded-lg"
+                className="inline-flex items-center gap-2 mt-6 bg-purple-700 hover:bg-purple-800 px-5 py-2 rounded-lg"
               >
                 <FaGithub />
                 GitHub
@@ -109,7 +109,7 @@ function ProjectsPreview() {
 
           <NavLink
             to="/projects"
-            className="bg-white text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-amber-500 hover:text-white transition"
+            className="bg-white text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 hover:text-white transition"
           >
             View All Projects
           </NavLink>
