@@ -23,14 +23,14 @@ function ContactCTA() {
 
           <NavLink
             to="/contact"
-            className="bg-purple-700 hover:bg-purple-800 px-8 py-4 rounded-lg font-semibold transition"
+            className="bg-[#7C3AED] hover:bg-[#9333EA] px-8 py-4 rounded-lg font-semibold transition"
           >
             Contact Us
           </NavLink>
 
           <NavLink
             to="/projects"
-            className="border border-purple-500 px-8 py-4 rounded-lg hover:bg-purple-700 transition"
+            className="border border-purple-500 px-8 py-4 rounded-lg hover:bg-[#7C3AED] transition"
           >
             View Projects
           </NavLink>

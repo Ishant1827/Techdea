@@ -25,7 +25,7 @@ function Stats() {
   ];
 
   return (
-    <section className="bg-white py-20">
+    <section className="bg-[#09090B] py-20">
       <div className="max-w-7xl mx-auto px-8">
 
         <div className="grid md:grid-cols-4 gap-8">
@@ -34,7 +34,7 @@ function Stats() {
 
             <div
               key={index}
-              className="bg-white rounded-xl shadow-xl hover:shadow-2xl p-8 text-center hover:-translate-y-2 transition duration-300"
+              className="bg-[#09090B] rounded-xl shadow-xl hover:shadow-2xl p-8 text-center hover:-translate-y-2 transition duration-300"
             >
 
               <div className="text-5xl text-purple-600 flex justify-center mb-5">
@@ -45,7 +45,7 @@ function Stats() {
                 {item.number}
               </h2>
 
-              <p className="text-gray-700 mt-2">
+              <p className="text-slate-400 mt-2">
                 {item.title}
               </p>
 

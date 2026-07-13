@@ -57,7 +57,7 @@ function ServicesPreview() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#09090B]">
 
       <div className="max-w-7xl mx-auto px-8">
 
@@ -71,7 +71,7 @@ function ServicesPreview() {
             What We Offer
           </h2>
 
-          <p className="text-gray-700 mt-5 max-w-3xl mx-auto">
+          <p className="text-slate-400 mt-5 max-w-3xl mx-auto">
             We provide professional IT services, technical training,
             career mentoring and software development solutions
             designed for students, startups and businesses.
@@ -85,7 +85,7 @@ function ServicesPreview() {
 
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-3 transition duration-300"
+              className="bg-[#09090B] rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-3 transition duration-300"
             >
 
               <div className="text-5xl text-purple-600 mb-6">
@@ -96,7 +96,7 @@ function ServicesPreview() {
                 {service.title}
               </h3>
 
-              <p className="text-gray-700 mt-4 leading-7">
+              <p className="text-slate-400 mt-4 leading-7">
                 {service.desc}
               </p>
 
@@ -110,7 +110,7 @@ function ServicesPreview() {
 
           <NavLink
             to="/services"
-            className="bg-purple-700 hover:bg-purple-800 text-white px-8 py-3 rounded-lg font-semibold transition"
+            className="bg-[#7C3AED] hover:bg-[#9333EA] text-white px-8 py-3 rounded-lg font-semibold transition"
           >
             View All Services
           </NavLink>

@@ -60,7 +60,7 @@ function Services() {
       </section>
 
       {/* Services */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
@@ -68,7 +68,7 @@ function Services() {
               What We Offer
             </h2>
 
-            <p className="mt-4 text-gray-700 max-w-2xl mx-auto">
+            <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
               Techdea provides complete technology solutions, project
               development, mentoring, and training designed for students,
               startups, and businesses.
@@ -80,13 +80,13 @@ function Services() {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border-t-4 border-purple-600"
+                className="bg-[#09090B] rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border-t-4 border-purple-600"
               >
                 <h3 className="text-xl font-bold text-slate-900 mb-4">
                   {service.title}
                 </h3>
 
-                <p className="text-gray-700 leading-7">
+                <p className="text-slate-400 leading-7">
                   {service.description}
                 </p>
               </div>
@@ -97,7 +97,7 @@ function Services() {
       </section>
 
       {/* Why Choose Us */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
@@ -108,45 +108,45 @@ function Services() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="text-xl font-bold mb-3">
                 Real Projects
               </h3>
 
-              <p className="text-gray-700">
+              <p className="text-slate-400">
                 Work on practical industry-level projects with real-world
                 experience.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="text-xl font-bold mb-3">
                 100+ Students Mentored
               </h3>
 
-              <p className="text-gray-700">
+              <p className="text-slate-400">
                 Successfully guided students in web development, Python,
                 resume building, and career preparation.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="text-xl font-bold mb-3">
                 Industry-Oriented Learning
               </h3>
 
-              <p className="text-gray-700">
+              <p className="text-slate-400">
                 Learn technologies that are actually used in professional
                 software development.
               </p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="text-xl font-bold mb-3">
                 End-to-End Support
               </h3>
 
-              <p className="text-gray-700">
+              <p className="text-slate-400">
                 From learning to deployment, we support every stage of your
                 journey.
               </p>
@@ -170,7 +170,7 @@ function Services() {
             training, or career guidance, Techdea is ready to help you.
           </p>
 
-          <button className="mt-8 bg-purple-600 text-black font-semibold px-8 py-3 rounded-lg hover:bg-purple-700 transition">
+          <button className="mt-8 bg-purple-600 text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#7C3AED] transition">
             Contact Us
           </button>
 

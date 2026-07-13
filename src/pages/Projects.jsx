@@ -92,7 +92,7 @@ function Projects() {
       </section>
 
       {/* Projects */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
@@ -100,7 +100,7 @@ function Projects() {
               Featured Projects
             </h2>
 
-            <p className="mt-4 text-gray-700">
+            <p className="mt-4 text-slate-400">
               Showcasing innovation, practical learning, and real-world
               development experience.
             </p>
@@ -111,7 +111,7 @@ function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-xl hover:shadow-2xl hover:shadow-2xl transition p-6"
+                className="bg-[#09090B] rounded-xl shadow-xl hover:shadow-2xl hover:shadow-2xl transition p-6"
               >
                 <h3 className="text-2xl font-bold text-slate-900">
                   {project.title}
@@ -121,11 +121,11 @@ function Projects() {
                   {project.tech}
                 </p>
 
-                <p className="text-gray-700 mt-4 leading-7">
+                <p className="text-slate-400 mt-4 leading-7">
                   {project.description}
                 </p>
 
-                <button className="mt-6 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white px-5 py-2 rounded-lg hover:bg-purple-700 hover:text-black transition">
+                <button className="mt-6 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white px-5 py-2 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
                   View Details
                 </button>
               </div>
@@ -137,29 +137,29 @@ function Projects() {
       </section>
 
       {/* Statistics */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="grid md:grid-cols-4 gap-8 text-center">
 
             <div>
               <h2 className="text-5xl font-bold text-purple-600">20+</h2>
-              <p className="mt-3 text-gray-700">Projects Completed</p>
+              <p className="mt-3 text-slate-400">Projects Completed</p>
             </div>
 
             <div>
               <h2 className="text-5xl font-bold text-purple-600">100+</h2>
-              <p className="mt-3 text-gray-700">Students Mentored</p>
+              <p className="mt-3 text-slate-400">Students Mentored</p>
             </div>
 
             <div>
               <h2 className="text-5xl font-bold text-purple-600">10+</h2>
-              <p className="mt-3 text-gray-700">Technologies Used</p>
+              <p className="mt-3 text-slate-400">Technologies Used</p>
             </div>
 
             <div>
               <h2 className="text-5xl font-bold text-purple-600">100%</h2>
-              <p className="mt-3 text-gray-700">Practical Learning</p>
+              <p className="mt-3 text-slate-400">Practical Learning</p>
             </div>
 
           </div>
@@ -180,7 +180,7 @@ function Projects() {
             innovative development solutions.
           </p>
 
-          <button className="mt-8 bg-purple-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+          <button className="mt-8 bg-purple-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] transition">
             Start Your Project
           </button>
 

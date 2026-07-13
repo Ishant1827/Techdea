@@ -17,7 +17,7 @@ function About() {
       </section>
 
       {/* About Company */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
 
           <div>
@@ -25,18 +25,18 @@ function About() {
               Who We Are
             </h2>
 
-            <p className="text-gray-700 leading-8 mb-5">
+            <p className="text-slate-400 leading-8 mb-5">
               Techdea is an IT company specializing in website development, web applications, custom software, and Python-based solutions. We also provide practical technical training to help students build real-world skills. Our mission is to deliver quality, innovation, and reliable technology solutions for businesses and individuals.</p>
 
-            <p className="text-gray-700 leading-8">
+            <p className="text-slate-400 leading-8">
             
             </p>
           </div>
 
-          <div className="bg-white rounded-2xl p-10">
+          <div className="bg-[#09090B] rounded-2xl p-10">
             <h3 className="text-2xl font-bold mb-6">Quick Highlights</h3>
 
-            <ul className="space-y-4 text-gray-700">
+            <ul className="space-y-4 text-slate-400">
               <li>100+ Students Mentored</li>
               <li>20+ Real Projects Completed</li>
               <li>Industry-Oriented Training</li>
@@ -50,27 +50,27 @@ function About() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
 
-          <div className="bg-white shadow-xl hover:shadow-2xl rounded-xl p-8">
+          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-8">
             <h2 className="text-3xl font-bold mb-4 text-[#0B1120]">
               Our Mission
             </h2>
 
-            <p className="text-gray-700 leading-8">
+            <p className="text-slate-400 leading-8">
               To deliver high-quality technology solutions while mentoring
               students through practical learning, real-world projects,
               and career-focused training.
             </p>
           </div>
 
-          <div className="bg-white shadow-xl hover:shadow-2xl rounded-xl p-8">
+          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-8">
             <h2 className="text-3xl font-bold mb-4 text-[#0B1120]">
               Our Vision
             </h2>
 
-            <p className="text-gray-700 leading-8">
+            <p className="text-slate-400 leading-8">
               To become a trusted technology and training company that
               empowers students, businesses, and aspiring developers
               through innovation and practical skills.
@@ -81,7 +81,7 @@ function About() {
       </section>
 
       {/* Founder */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold mb-10">
@@ -94,7 +94,7 @@ function About() {
               Ishant Srivastava
             </h3>
 
-            <p className="text-gray-700 mt-4 leading-8">
+            <p className="text-slate-400 mt-4 leading-8">
               Founder of Techdea and passionate Full Stack Developer,
               Technical Mentor, and Project Builder. Responsible for
               project management, client communication, software
@@ -108,7 +108,7 @@ function About() {
       </section>
 
       {/* Technologies */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold mb-10">
@@ -133,7 +133,7 @@ function About() {
             ].map((tech) => (
               <div
                 key={tech}
-                className="bg-white rounded-lg shadow p-5 font-semibold"
+                className="bg-[#09090B] rounded-lg shadow p-5 font-semibold"
               >
                 {tech}
               </div>
@@ -158,7 +158,7 @@ function About() {
             help you achieve your goals.
           </p>
 
-          <button className="mt-8 bg-purple-700 hover:bg-purple-600 px-8 py-3 rounded-lg font-semibold transition">
+          <button className="mt-8 bg-[#7C3AED] hover:bg-purple-600 px-8 py-3 rounded-lg font-semibold transition">
             Contact Us
           </button>
 

@@ -154,7 +154,7 @@ function Footer() {
             © 2026 Techdea. All Rights Reserved.
           </p>
 
-          <p className="mt-2 text-gray-600">
+          <p className="mt-2 text-slate-400">
             Designed & Developed by <span className="text-purple-500">Ishant Srivastava</span>
           </p>
 

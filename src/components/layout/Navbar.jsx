@@ -27,7 +27,7 @@ function Navbar() {
 
           <div>
             <h1 className="text-2xl font-bold text-white">
-              Tech<span className="text-purple-700">dea</span>
+              Tech<span className="text-[#A855F7]">dea</span>
             </h1>
 
             <p className="text-xs text-gray-400">
@@ -68,7 +68,7 @@ function Navbar() {
 
         <NavLink
           to="/login"
-          className="bg-purple-700 hover:bg-purple-800 px-5 py-2 rounded-lg text-white font-medium transition duration-300"
+          className="bg-[#7C3AED] hover:bg-[#9333EA] px-5 py-2 rounded-lg text-white font-medium transition duration-300"
         >
           Login
         </NavLink>

@@ -18,7 +18,7 @@ function Contact() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
 
           {/* Contact Info */}
@@ -30,24 +30,24 @@ function Contact() {
 
             <div className="space-y-8">
 
-              <div className="bg-white p-6 rounded-xl shadow">
+              <div className="bg-[#09090B] p-6 rounded-xl shadow">
                 <h3 className="text-xl font-bold">Phone</h3>
-                <p className="mt-2 text-gray-700">
+                <p className="mt-2 text-slate-400">
                   +91 9369907885
                 </p>
-                <p className="text-gray-700">
+                <p className="text-slate-400">
                   +91 9411862576
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow">
+              <div className="bg-[#09090B] p-6 rounded-xl shadow">
                 <h3 className="text-xl font-bold">Email</h3>
-                <p className="mt-2 text-gray-700">
+                <p className="mt-2 text-slate-400">
                   ishantsri1827@gmail.com
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow">
+              <div className="bg-[#09090B] p-6 rounded-xl shadow">
                 <h3 className="text-xl font-bold">GitHub</h3>
                 <a
                   href="https://github.com/techdea-technologies"
@@ -59,7 +59,7 @@ function Contact() {
                 </a>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow">
+              <div className="bg-[#09090B] p-6 rounded-xl shadow">
                 <h3 className="text-xl font-bold">LinkedIn</h3>
                 <a
                   href="https://www.linkedin.com/in/ishantsrivastava/"
@@ -76,7 +76,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-8">
+          <div className="bg-[#09090B] rounded-2xl shadow-xl hover:shadow-2xl p-8">
 
             <h2 className="text-3xl font-bold mb-8">
               Send Us a Message
@@ -110,7 +110,7 @@ function Contact() {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-3 rounded-lg hover:bg-purple-700 hover:text-black transition"
+                className="w-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-3 rounded-lg hover:bg-[#7C3AED] hover:text-black transition"
               >
                 Send Message
               </button>
@@ -123,7 +123,7 @@ function Contact() {
       </section>
 
       {/* Business Hours */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold mb-10">
@@ -132,23 +132,23 @@ function Contact() {
 
           <div className="grid md:grid-cols-3 gap-8">
 
-            <div className="bg-white p-8 rounded-xl shadow">
+            <div className="bg-[#09090B] p-8 rounded-xl shadow">
               <h3 className="text-xl font-bold">Monday - Friday</h3>
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-slate-400">
                 9:00 AM - 7:00 PM
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow">
+            <div className="bg-[#09090B] p-8 rounded-xl shadow">
               <h3 className="text-xl font-bold">Saturday</h3>
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-slate-400">
                 10:00 AM - 5:00 PM
               </p>
             </div>
 
-            <div className="bg-white p-8 rounded-xl shadow">
+            <div className="bg-[#09090B] p-8 rounded-xl shadow">
               <h3 className="text-xl font-bold">Sunday</h3>
-              <p className="mt-3 text-gray-700">
+              <p className="mt-3 text-slate-400">
                 Available by Appointment
               </p>
             </div>

@@ -52,10 +52,10 @@ function Team() {
       </section>
 
       {/* Founder */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-6xl mx-auto px-6">
 
-          <div className="bg-white rounded-2xl shadow-xl hover:shadow-2xl p-10 text-center">
+          <div className="bg-[#09090B] rounded-2xl shadow-xl hover:shadow-2xl p-10 text-center">
 
             <div className="w-36 h-36 mx-auto rounded-full bg-purple-600 flex items-center justify-center text-5xl font-bold text-white">
               IS
@@ -69,7 +69,7 @@ function Team() {
               Founder & Manager
             </p>
 
-            <p className="text-gray-700 mt-6 leading-8 max-w-3xl mx-auto">
+            <p className="text-slate-400 mt-6 leading-8 max-w-3xl mx-auto">
               Passionate Full Stack Developer, Technical Mentor, and Entrepreneur.
               Successfully mentored 100+ students while building websites,
               software solutions, and real-world projects for businesses and learners.
@@ -81,7 +81,7 @@ function Team() {
       </section>
 
       {/* Team Members */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
@@ -89,7 +89,7 @@ function Team() {
               Our Team
             </h2>
 
-            <p className="mt-4 text-gray-700">
+            <p className="mt-4 text-slate-400">
               Young professionals learning, collaborating, and growing together.
             </p>
           </div>
@@ -99,7 +99,7 @@ function Team() {
             {teamMembers.map((member, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-xl hover:shadow-2xl p-8 hover:shadow-2xl transition"
+                className="bg-[#09090B] rounded-xl shadow-xl hover:shadow-2xl p-8 hover:shadow-2xl transition"
               >
                 <div className="w-20 h-20 rounded-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white flex items-center justify-center text-2xl font-bold">
                   {member.name.charAt(0)}
@@ -113,7 +113,7 @@ function Team() {
                   {member.role}
                 </p>
 
-                <p className="text-gray-700 mt-5 leading-7">
+                <p className="text-slate-400 mt-5 leading-7">
                   {member.description}
                 </p>
               </div>
@@ -125,7 +125,7 @@ function Team() {
       </section>
 
       {/* Why Join */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#09090B]">
         <div className="max-w-6xl mx-auto px-6 text-center">
 
           <h2 className="text-4xl font-bold">
@@ -134,28 +134,28 @@ function Team() {
 
           <div className="grid md:grid-cols-4 gap-8 mt-14">
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="font-bold text-xl mb-3">
                 Real Projects
               </h3>
               <p>Gain practical experience through industry-level development.</p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="font-bold text-xl mb-3">
                 Learning Culture
               </h3>
               <p>Continuous learning and collaboration with experienced mentors.</p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="font-bold text-xl mb-3">
                 Innovation
               </h3>
               <p>Build creative solutions using modern technologies.</p>
             </div>
 
-            <div className="bg-white rounded-xl p-8 shadow">
+            <div className="bg-[#09090B] rounded-xl p-8 shadow">
               <h3 className="font-bold text-xl mb-3">
                 Career Growth
               </h3>
@@ -180,7 +180,7 @@ function Team() {
             eager to learn, collaborate, and build impactful technology solutions.
           </p>
 
-          <button className="mt-8 bg-purple-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+          <button className="mt-8 bg-purple-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] transition">
             Join Techdea
           </button>
 

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Dashboard() {
   return (
-    <section className="min-h-screen bg-white">
+    <section className="min-h-screen bg-[#09090B]">
 
       {/* Header */}
       <div className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-5 px-8 flex justify-between items-center">
@@ -13,7 +13,7 @@ function Dashboard() {
 
         <Link
           to="/"
-          className="bg-purple-600 text-black px-5 py-2 rounded-lg font-semibold hover:bg-purple-700 transition"
+          className="bg-purple-600 text-black px-5 py-2 rounded-lg font-semibold hover:bg-[#7C3AED] transition"
         >
           Logout
         </Link>
@@ -29,7 +29,7 @@ function Dashboard() {
             Welcome, Admin 👋
           </h2>
 
-          <p className="text-gray-700 mt-2">
+          <p className="text-slate-400 mt-2">
             Manage your website, projects, services, students, and contact messages.
           </p>
 
@@ -38,8 +38,8 @@ function Dashboard() {
         {/* Dashboard Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-          <div className="bg-white shadow-xl hover:shadow-2xl rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-gray-600">
+          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-slate-400">
               Projects
             </h3>
 
@@ -48,8 +48,8 @@ function Dashboard() {
             </h1>
           </div>
 
-          <div className="bg-white shadow-xl hover:shadow-2xl rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-gray-600">
+          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-slate-400">
               Students
             </h3>
 
@@ -58,8 +58,8 @@ function Dashboard() {
             </h1>
           </div>
 
-          <div className="bg-white shadow-xl hover:shadow-2xl rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-gray-600">
+          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-slate-400">
               Services
             </h3>
 
@@ -68,8 +68,8 @@ function Dashboard() {
             </h1>
           </div>
 
-          <div className="bg-white shadow-xl hover:shadow-2xl rounded-xl p-6">
-            <h3 className="text-lg font-semibold text-gray-600">
+          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-6">
+            <h3 className="text-lg font-semibold text-slate-400">
               Messages
             </h3>
 
@@ -89,19 +89,19 @@ function Dashboard() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-purple-700 hover:text-black transition">
+            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               Manage Projects
             </button>
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-purple-700 hover:text-black transition">
+            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               Manage Services
             </button>
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-purple-700 hover:text-black transition">
+            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               View Messages
             </button>
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-purple-700 hover:text-black transition">
+            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               Manage Team
             </button>
 
@@ -110,13 +110,13 @@ function Dashboard() {
         </div>
 
         {/* Recent Activity */}
-        <div className="mt-12 bg-white rounded-xl shadow-xl hover:shadow-2xl p-8">
+        <div className="mt-12 bg-[#09090B] rounded-xl shadow-xl hover:shadow-2xl p-8">
 
           <h2 className="text-3xl font-bold mb-6">
             Recent Activity
           </h2>
 
-          <ul className="space-y-4 text-gray-700">
+          <ul className="space-y-4 text-slate-400">
 
             <li>✔ New student enrolled.</li>
 

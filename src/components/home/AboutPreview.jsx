@@ -55,7 +55,7 @@ function AboutPreview() {
 
           <NavLink
             to="/about"
-            className="inline-block mt-10 bg-purple-700 hover:bg-purple-800 px-7 py-3 rounded-lg font-semibold transition"
+            className="inline-block mt-10 bg-[#7C3AED] hover:bg-[#9333EA] px-7 py-3 rounded-lg font-semibold transition"
           >
             Learn More
           </NavLink>

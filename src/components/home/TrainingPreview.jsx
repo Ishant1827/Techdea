@@ -76,7 +76,7 @@ function TrainingPreview() {
 
           <NavLink
             to="/training"
-            className="bg-purple-700 hover:bg-purple-800 px-8 py-3 rounded-lg font-semibold transition"
+            className="bg-[#7C3AED] hover:bg-[#9333EA] px-8 py-3 rounded-lg font-semibold transition"
           >
             Explore Training
           </NavLink>

@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 function Login() {
   return (
-    <section className="min-h-screen bg-white flex items-center justify-center px-6">
+    <section className="min-h-screen bg-[#09090B] flex items-center justify-center px-6">
 
-      <div className="bg-white shadow-2xl rounded-2xl w-full max-w-md p-10">
+      <div className="bg-[#09090B] shadow-2xl rounded-2xl w-full max-w-md p-10">
 
         <div className="text-center">
 
@@ -12,7 +12,7 @@ function Login() {
             Welcome Back
           </h1>
 
-          <p className="text-gray-600 mt-3">
+          <p className="text-slate-400 mt-3">
             Login to your Techdea Dashboard
           </p>
 
@@ -54,7 +54,7 @@ function Login() {
 
               <input type="checkbox" />
 
-              <span className="text-gray-700">
+              <span className="text-slate-400">
                 Remember Me
               </span>
 
@@ -70,14 +70,14 @@ function Login() {
           </div>
 
           <button
-            className="w-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-3 rounded-lg hover:bg-purple-700 hover:text-black transition"
+            className="w-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-3 rounded-lg hover:bg-[#7C3AED] hover:text-black transition"
           >
             Login
           </button>
 
         </form>
 
-        <p className="text-center text-gray-700 mt-8">
+        <p className="text-center text-slate-400 mt-8">
 
           Back to{" "}
 

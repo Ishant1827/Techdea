@@ -93,7 +93,7 @@ function ProjectsPreview() {
                 href={project.github}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 mt-6 bg-purple-700 hover:bg-purple-800 px-5 py-2 rounded-lg"
+                className="inline-flex items-center gap-2 mt-6 bg-[#7C3AED] hover:bg-[#9333EA] px-5 py-2 rounded-lg"
               >
                 <FaGithub />
                 GitHub
@@ -109,7 +109,7 @@ function ProjectsPreview() {
 
           <NavLink
             to="/projects"
-            className="bg-white text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-purple-700 hover:text-white transition"
+            className="bg-[#09090B] text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] hover:text-white transition"
           >
             View All Projects
           </NavLink>

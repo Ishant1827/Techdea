@@ -42,7 +42,7 @@ function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-24 bg-white">
+    <section className="py-24 bg-[#09090B]">
       <div className="max-w-7xl mx-auto px-8">
 
         <div className="text-center">
@@ -55,7 +55,7 @@ function WhyChooseUs() {
             Building Skills. Creating Opportunities.
           </h2>
 
-          <p className="text-gray-700 mt-5 max-w-3xl mx-auto">
+          <p className="text-slate-400 mt-5 max-w-3xl mx-auto">
             We believe technology should be practical, accessible and
             career-oriented. Our goal is to help students and businesses
             achieve success through innovation.
@@ -69,7 +69,7 @@ function WhyChooseUs() {
 
             <div
               key={index}
-              className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+              className="bg-[#09090B] rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-2 transition duration-300"
             >
 
               <div className="text-5xl text-purple-600 mb-6">
@@ -80,7 +80,7 @@ function WhyChooseUs() {
                 {feature.title}
               </h3>
 
-              <p className="text-gray-700 mt-4 leading-7">
+              <p className="text-slate-400 mt-4 leading-7">
                 {feature.desc}
               </p>
 
