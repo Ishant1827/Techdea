@@ -1,183 +1,609 @@
+import { Link } from "react-router-dom";
+import {
+  FaCode,
+  FaLaptopCode,
+  FaShoppingCart,
+  FaCogs,
+  FaMobileAlt,
+  FaAndroid,
+  FaReact,
+  FaRobot,
+  FaBrain,
+  FaChartLine,
+  FaDatabase,
+  FaJava,
+  FaPython,
+  FaJsSquare,
+  FaHtml5,
+  FaCss3Alt,
+  FaCloud,
+  FaShieldAlt,
+  FaPalette,
+} from "react-icons/fa";
+
 function Services() {
-  const services = [
-    {
-      title: "Web Development",
-      description:
-        "Responsive, modern, and business-oriented websites built using the latest web technologies.",
-    },
-    {
-      title: "Web Application Development",
-      description:
-        "Custom dashboards, management systems, portals, and scalable web applications tailored to business needs.",
-    },
-    {
-      title: "Python Projects",
-      description:
-        "Academic and business Python projects including automation, GUI applications, data processing, and machine learning.",
-    },
-    {
-      title: "Resume & CV Building",
-      description:
-        "Professional ATS-friendly resumes, CVs, LinkedIn profile optimization, and portfolio creation.",
-    },
-    {
-      title: "Career Guidance & Mentoring",
-      description:
-        "Personalized mentoring, interview preparation, career planning, and technical guidance for students and professionals.",
-    },
-    {
-      title: "Presentation & Documentation",
-      description:
-        "Professional PowerPoint presentations, Excel dashboards, reports, project documentation, and business documents.",
-    },
-    {
-      title: "Training Programs",
-      description:
-        "Industry-oriented training in Web Development, Python, React, Full Stack Development, and project-based learning.",
-    },
-    {
-      title: "Technical Support",
-      description:
-        "Website maintenance, bug fixing, software installation, troubleshooting, optimization, and technical consultation.",
-    },
+  const softwareServices = [
+    "Website Development",
+    "Custom Software Development",
+    "Full-Stack Web Development (MERN)",
+    "E-Commerce Development",
+    "ERP & CRM Solutions",
+    "API Development & Integration",
+    "Website Maintenance & Support",
+    "Desktop Application Development",
+  ];
+
+  const mobileServices = [
+    "Android App Development",
+    "Flutter Development",
+    "React Native Development",
+    "Hybrid Mobile Applications",
+    "App Maintenance & Support",
+  ];
+
+  const aiServices = [
+    "Artificial Intelligence (AI)",
+    "Machine Learning",
+    "Deep Learning",
+    "Data Science",
+    "Data Analytics",
+    "Business Intelligence",
   ];
 
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold">
-            Our <span className="text-purple-400">Services</span>
+      {/* Hero */}
+
+      <section className="bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA] py-24">
+
+        <div className="max-w-7xl mx-auto px-4 text-center">
+
+          <h1 className="text-4xl md:text-6xl font-bold text-white">
+            Our Services
           </h1>
 
-          <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
-            We provide innovative technology solutions, professional
-            development services, technical mentoring, and industry-focused
-            training to help individuals and businesses grow.
+          <p className="mt-6 text-purple-100 text-lg max-w-3xl mx-auto">
+            Techdea Technologies provides complete software development,
+            technology consulting, AI solutions and digital transformation
+            services for startups, businesses and enterprises.
           </p>
+
         </div>
+
       </section>
 
-      {/* Services */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* Software Development */}
 
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-slate-900">
-              What We Offer
-            </h2>
+      <section className="py-20 bg-white">
 
-            <p className="mt-4 text-slate-400 max-w-2xl mx-auto">
-              Techdea provides complete technology solutions, project
-              development, mentoring, and training designed for students,
-              startups, and businesses.
-            </p>
+        <div className="max-w-7xl mx-auto px-4">
+
+          <div className="flex items-center gap-4 mb-10">
+
+            <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+              <FaLaptopCode />
+            </div>
+
+            <div>
+
+              <h2 className="text-3xl font-bold">
+                Software Development
+              </h2>
+
+              <p className="text-gray-600">
+                Modern software solutions tailored for your business.
+              </p>
+
+            </div>
+
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            {services.map((service, index) => (
+            {softwareServices.map((service) => (
+
               <div
-                key={index}
-                className="bg-[#09090B] rounded-xl shadow-md hover:shadow-xl transition duration-300 p-6 border-t-4 border-purple-600"
+                key={service}
+                className="bg-[#F8FAFC] p-6 rounded-2xl shadow hover:shadow-xl hover:-translate-y-2 transition"
               >
-                <h3 className="text-xl font-bold text-slate-900 mb-4">
-                  {service.title}
+
+                <FaCode className="text-[#7C3AED] text-3xl mb-5" />
+
+                <h3 className="font-semibold text-lg">
+                  {service}
                 </h3>
 
-                <p className="text-slate-400 leading-7">
-                  {service.description}
-                </p>
               </div>
+
             ))}
 
           </div>
+
         </div>
+
       </section>
 
-      {/* Why Choose Us */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6">
+      {/* Mobile Development */}
 
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold">
-              Why Choose Techdea?
-            </h2>
-          </div>
+      <section className="py-20 bg-[#F8FAFC]">
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="max-w-7xl mx-auto px-4">
 
-            <div className="bg-[#09090B] rounded-xl p-8 shadow">
-              <h3 className="text-xl font-bold mb-3">
-                Real Projects
-              </h3>
+          <div className="flex items-center gap-4 mb-10">
 
-              <p className="text-slate-400">
-                Work on practical industry-level projects with real-world
-                experience.
-              </p>
+            <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+              <FaMobileAlt />
             </div>
 
-            <div className="bg-[#09090B] rounded-xl p-8 shadow">
-              <h3 className="text-xl font-bold mb-3">
-                100+ Students Mentored
-              </h3>
+            <div>
 
-              <p className="text-slate-400">
-                Successfully guided students in web development, Python,
-                resume building, and career preparation.
+              <h2 className="text-3xl font-bold">
+                Mobile App Development
+              </h2>
+
+              <p className="text-gray-600">
+                Powerful Android & Cross Platform Applications.
               </p>
-            </div>
 
-            <div className="bg-[#09090B] rounded-xl p-8 shadow">
-              <h3 className="text-xl font-bold mb-3">
-                Industry-Oriented Learning
-              </h3>
-
-              <p className="text-slate-400">
-                Learn technologies that are actually used in professional
-                software development.
-              </p>
-            </div>
-
-            <div className="bg-[#09090B] rounded-xl p-8 shadow">
-              <h3 className="text-xl font-bold mb-3">
-                End-to-End Support
-              </h3>
-
-              <p className="text-slate-400">
-                From learning to deployment, we support every stage of your
-                journey.
-              </p>
             </div>
 
           </div>
 
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {mobileServices.map((service) => (
+
+              <div
+                key={service}
+                className="bg-white rounded-2xl shadow p-6 hover:shadow-xl transition"
+              >
+
+                <FaAndroid className="text-[#7C3AED] text-3xl mb-5" />
+
+                <h3 className="font-semibold text-lg">
+                  {service}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
+
         </div>
+
       </section>
 
-      {/* CTA */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-20">
-        <div className="max-w-5xl mx-auto text-center px-6">
+      {/* Artificial Intelligence */}
 
-          <h2 className="text-4xl font-bold">
-            Ready to Start Your Project?
-          </h2>
+      <section className="py-20 bg-white">
 
-          <p className="mt-5 text-gray-300">
-            Whether you need a website, software solution, technical
-            training, or career guidance, Techdea is ready to help you.
+        <div className="max-w-7xl mx-auto px-4">
+
+          <div className="flex items-center gap-4 mb-10">
+
+            <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+              <FaRobot />
+            </div>
+
+            <div>
+
+              <h2 className="text-3xl font-bold">
+                Artificial Intelligence
+              </h2>
+
+              <p className="text-gray-600">
+                AI powered business solutions.
+              </p>
+
+            </div>
+
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            {aiServices.map((service) => (
+
+              <div
+                key={service}
+                className="bg-[#F8FAFC] rounded-2xl shadow p-6 hover:shadow-xl transition"
+              >
+
+                <FaBrain className="text-[#7C3AED] text-3xl mb-5" />
+
+                <h3 className="font-semibold text-lg">
+                  {service}
+                </h3>
+
+              </div>
+
+            ))}
+
+          </div>
+
+        </div>
+
+      </section>
+
+
+{/* Programming Languages */}
+
+<section className="py-20 bg-[#F8FAFC]">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="flex items-center gap-4 mb-10">
+
+      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+        <FaJava />
+      </div>
+
+      <div>
+        <h2 className="text-3xl font-bold">
+          Programming Languages
+        </h2>
+
+        <p className="text-gray-600">
+          Learn and build applications using industry-standard programming languages.
+        </p>
+      </div>
+
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      {[
+        "C Programming",
+        "C++ Programming",
+        "Python Development",
+        "Java Development",
+        "JavaScript",
+        "TypeScript",
+        "HTML5",
+        "CSS3",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="bg-white rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition"
+        >
+          <FaJsSquare className="text-[#7C3AED] text-3xl mb-5" />
+
+          <h3 className="font-semibold text-lg">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-20 bg-white">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="flex items-center gap-4 mb-10">
+
+      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+        <FaCloud />
+      </div>
+
+      <div>
+
+        <h2 className="text-3xl font-bold">
+          Cloud Computing & DevOps
+        </h2>
+
+        <p className="text-gray-600">
+          Modern cloud infrastructure and deployment services.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {[
+        "AWS",
+        "Microsoft Azure",
+        "Google Cloud",
+        "Docker",
+        "Kubernetes",
+        "DevOps",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="bg-[#F8FAFC] rounded-2xl shadow p-6 hover:shadow-xl transition"
+        >
+          <FaCloud className="text-[#7C3AED] text-3xl mb-5" />
+
+          <h3 className="font-semibold text-lg">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-20 bg-white">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="flex items-center gap-4 mb-10">
+
+      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+        <FaDatabase />
+      </div>
+
+      <div>
+
+        <h2 className="text-3xl font-bold">
+          Database Management
+        </h2>
+
+        <p className="text-gray-600">
+          Reliable database solutions for scalable applications.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      {[
+        "SQL",
+        "MySQL",
+        "PostgreSQL",
+        "MongoDB",
+        "Firebase",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="bg-[#F8FAFC] rounded-2xl shadow p-6 hover:shadow-xl transition"
+        >
+          <FaDatabase className="text-[#7C3AED] text-3xl mb-5" />
+
+          <h3 className="font-semibold text-lg">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-20 bg-[#F8FAFC]">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="flex items-center gap-4 mb-10">
+
+      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+        <FaPalette />
+      </div>
+
+      <div>
+
+        <h2 className="text-3xl font-bold">
+          UI / UX Design
+        </h2>
+
+        <p className="text-gray-600">
+          Beautiful, user-friendly and modern digital experiences.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+      {[
+        "UI Design",
+        "UX Design",
+        "Figma",
+        "Graphic Design",
+        "Logo Design",
+        "Brand Identity",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="bg-white rounded-2xl shadow p-6 hover:shadow-xl transition"
+        >
+          <FaPalette className="text-[#7C3AED] text-3xl mb-5" />
+
+          <h3 className="font-semibold text-lg">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+{/* Business & IT Consulting */}
+
+<section className="py-20 bg-white">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="flex items-center gap-4 mb-10">
+
+      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+        <FaCogs />
+      </div>
+
+      <div>
+
+        <h2 className="text-3xl font-bold">
+          Business & IT Consulting
+        </h2>
+
+        <p className="text-gray-600">
+          Helping startups and businesses transform ideas into successful digital products.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      {[
+        "IT Consulting",
+        "Startup Consulting",
+        "Digital Transformation",
+        "Business Automation",
+        "Software Testing",
+        "Technical Documentation",
+      ].map((item) => (
+
+        <div
+          key={item}
+          className="bg-[#F8FAFC] rounded-2xl shadow p-6 hover:shadow-xl hover:-translate-y-2 transition"
+        >
+
+          <FaCogs className="text-[#7C3AED] text-3xl mb-5" />
+
+          <h3 className="font-semibold text-lg">
+            {item}
+          </h3>
+
+        </div>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-20 bg-[#F8FAFC]">
+
+  <div className="max-w-7xl mx-auto px-4">
+
+    <div className="text-center">
+
+      <h2 className="text-4xl font-bold">
+        Why Choose Techdea Technologies?
+      </h2>
+
+      <p className="mt-5 text-gray-600 max-w-3xl mx-auto">
+        We combine technology, innovation and industry expertise to deliver
+        reliable software solutions for startups, businesses and enterprises.
+      </p>
+
+    </div>
+
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
+
+      {[
+        {
+          title: "Experienced Team",
+          desc: "Professional developers with practical industry experience.",
+        },
+        {
+          title: "Modern Technology",
+          desc: "React, MERN, AI, Cloud, Cyber Security and latest frameworks.",
+        },
+        {
+          title: "Affordable Solutions",
+          desc: "Quality services at competitive pricing.",
+        },
+        {
+          title: "Long-Term Support",
+          desc: "Maintenance, updates and technical assistance.",
+        },
+      ].map((item) => (
+
+        <div
+          key={item.title}
+          className="bg-white rounded-2xl shadow p-8 hover:shadow-xl hover:-translate-y-2 transition"
+        >
+
+          <h3 className="text-xl font-bold">
+            {item.title}
+          </h3>
+
+          <p className="mt-4 text-gray-600 leading-7">
+            {item.desc}
           </p>
 
-          <button className="mt-8 bg-purple-600 text-black font-semibold px-8 py-3 rounded-lg hover:bg-[#7C3AED] transition">
-            Contact Us
-          </button>
-
         </div>
-      </section>
+
+      ))}
+
+    </div>
+
+  </div>
+
+</section>
+
+<section className="py-24 bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA]">
+
+  <div className="max-w-5xl mx-auto px-4 text-center">
+
+    <h2 className="text-4xl md:text-5xl font-bold text-white">
+      Let's Build Something Amazing Together
+    </h2>
+
+    <p className="mt-6 text-lg text-purple-100">
+      Whether you need software development, AI solutions, cloud services or
+      technology consulting, Techdea Technologies is ready to help.
+    </p>
+
+    <div className="mt-10 flex flex-col sm:flex-row justify-center gap-5">
+
+      <Link
+        to="/contact"
+        className="bg-white text-[#7C3AED] px-8 py-4 rounded-xl font-semibold hover:bg-gray-100 transition"
+      >
+        Contact Us
+      </Link>
+
+      <Link
+        to="/projects"
+        className="border-2 border-white text-white px-8 py-4 rounded-xl font-semibold hover:bg-white hover:text-[#7C3AED] transition"
+      >
+        View Projects
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
     </>
   );
 }
+
+
 
 export default Services;

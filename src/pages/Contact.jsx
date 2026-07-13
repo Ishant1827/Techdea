@@ -1,116 +1,155 @@
+import {
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
+  FaGithub,
+  FaInstagram,
+  FaLinkedin,
+  FaWhatsapp,
+} from "react-icons/fa";
+
 function Contact() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      <section className="bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA] py-24 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <h1 className="text-5xl md:text-6xl font-bold">
-            Contact <span className="text-purple-400">Techdea</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold">
+            Contact Us
           </h1>
 
-          <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
-            Have a project, training inquiry, or collaboration idea?
-            We'd love to hear from you.
+          <p className="mt-6 text-lg max-w-3xl mx-auto text-purple-100">
+            We'd love to hear from you. Whether you have a project,
+            business inquiry, internship question or collaboration idea,
+            our team is ready to help.
           </p>
 
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+      {/* Contact Cards */}
 
-          {/* Contact Info */}
-          <div>
+      <section className="bg-white py-20">
 
-            <h2 className="text-4xl font-bold text-slate-900 mb-8">
-              Get In Touch
-            </h2>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-            <div className="space-y-8">
+          <div className="grid md:grid-cols-3 gap-8">
 
-              <div className="bg-[#09090B] p-6 rounded-xl shadow">
-                <h3 className="text-xl font-bold">Phone</h3>
-                <p className="mt-2 text-slate-400">
-                  +91 9369907885
-                </p>
-                <p className="text-slate-400">
-                  +91 9411862576
-                </p>
-              </div>
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl shadow hover:shadow-xl transition">
 
-              <div className="bg-[#09090B] p-6 rounded-xl shadow">
-                <h3 className="text-xl font-bold">Email</h3>
-                <p className="mt-2 text-slate-400">
-                  ishantsri1827@gmail.com
-                </p>
-              </div>
+              <FaPhoneAlt className="text-3xl text-[#7C3AED]" />
 
-              <div className="bg-[#09090B] p-6 rounded-xl shadow">
-                <h3 className="text-xl font-bold">GitHub</h3>
-                <a
-                  href="https://github.com/techdea-technologies"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  github.com/techdea-technologies
-                </a>
-              </div>
+              <h3 className="mt-5 text-2xl font-semibold">
+                Call Us
+              </h3>
 
-              <div className="bg-[#09090B] p-6 rounded-xl shadow">
-                <h3 className="text-xl font-bold">LinkedIn</h3>
-                <a
-                  href="https://www.linkedin.com/in/ishantsrivastava/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="text-blue-600 hover:underline"
-                >
-                  linkedin.com/in/ishantsrivastava
-                </a>
-              </div>
+              <a
+                href="tel:+919369907885"
+                className="block mt-4 text-gray-600 hover:text-[#7C3AED]"
+              >
+                +91 9369907885
+                
+              </a>
+              
+              <a
+                href="tel:+919411862576"
+                className="block mt-4 text-gray-600 hover:text-[#7C3AED]"
+              >
+                +91 9411862576
+                
+              </a>
+
+            </div>
+
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl shadow hover:shadow-xl transition">
+
+              <FaEnvelope className="text-3xl text-[#7C3AED]" />
+
+              <h3 className="mt-5 text-2xl font-semibold">
+                Email
+              </h3>
+
+              <a
+                href="mailto:contact.techdea@gmail.com"
+                className="block mt-4 text-gray-600 hover:text-[#7C3AED]"
+              >
+                contact.techdea@gmail.com
+              </a>
+
+              <a
+                href="mailto:manager.techdea@gmail.com"
+                className="block mt-2 text-gray-600 hover:text-[#7C3AED]"
+              >
+                manager.techdea@gmail.com
+              </a>
+
+            </div>
+
+            <div className="bg-[#F8FAFC] p-8 rounded-2xl shadow hover:shadow-xl transition">
+
+              <FaMapMarkerAlt className="text-3xl text-[#7C3AED]" />
+
+              <h3 className="mt-5 text-2xl font-semibold">
+                Office
+              </h3>
+
+              <p className="mt-4 text-gray-600">
+                Ghaziabad, Uttar Pradesh, India
+              </p>
 
             </div>
 
           </div>
 
-          {/* Contact Form */}
-          <div className="bg-[#09090B] rounded-2xl shadow-xl hover:shadow-2xl p-8">
+        </div>
 
-            <h2 className="text-3xl font-bold mb-8">
-              Send Us a Message
+      </section>
+
+      {/* Contact Form */}
+
+      <section className="bg-[#F8FAFC] py-20">
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12">
+
+          <div>
+
+            <h2 className="text-4xl font-bold">
+              Send a Message
             </h2>
 
-            <form className="space-y-5">
+            <p className="mt-5 text-gray-600">
+              Fill out the form and our team will contact you as soon as possible.
+            </p>
+
+            <form className="mt-10 space-y-5">
 
               <input
                 type="text"
-                placeholder="Full Name"
-                className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-purple-500"
+                placeholder="Your Name"
+                className="w-full border rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
               />
 
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full border rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
               />
 
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full border rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
               />
 
               <textarea
                 rows="6"
                 placeholder="Your Message"
-                className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-purple-500"
+                className="w-full border rounded-xl px-5 py-3 focus:outline-none focus:ring-2 focus:ring-[#7C3AED]"
               ></textarea>
 
               <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-3 rounded-lg hover:bg-[#7C3AED] hover:text-black transition"
+                className="bg-[#7C3AED] hover:bg-[#9333EA] text-white px-8 py-3 rounded-xl transition"
               >
                 Send Message
               </button>
@@ -119,59 +158,63 @@ function Contact() {
 
           </div>
 
-        </div>
-      </section>
+          {/* Social */}
 
-      {/* Business Hours */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+          <div>
 
-          <h2 className="text-4xl font-bold mb-10">
-            Business Hours
-          </h2>
+            <h2 className="text-4xl font-bold">
+              Connect With Us
+            </h2>
 
-          <div className="grid md:grid-cols-3 gap-8">
+            <p className="mt-5 text-gray-600">
+              Follow us on social media and stay updated with our latest
+              projects, internships and training programs.
+            </p>
 
-            <div className="bg-[#09090B] p-8 rounded-xl shadow">
-              <h3 className="text-xl font-bold">Monday - Friday</h3>
-              <p className="mt-3 text-slate-400">
-                9:00 AM - 7:00 PM
-              </p>
-            </div>
+            <div className="flex gap-5 mt-10">
 
-            <div className="bg-[#09090B] p-8 rounded-xl shadow">
-              <h3 className="text-xl font-bold">Saturday</h3>
-              <p className="mt-3 text-slate-400">
-                10:00 AM - 5:00 PM
-              </p>
-            </div>
+              <a
+                href="https://github.com/techdea-technologies"
+                target="_blank"
+                rel="noreferrer"
+                className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#7C3AED] hover:text-white transition"
+              >
+                <FaGithub size={22} />
+              </a>
 
-            <div className="bg-[#09090B] p-8 rounded-xl shadow">
-              <h3 className="text-xl font-bold">Sunday</h3>
-              <p className="mt-3 text-slate-400">
-                Available by Appointment
-              </p>
+              <a
+                href="https://www.instagram.com/tech_dea/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#7C3AED] hover:text-white transition"
+              >
+                <FaInstagram size={22} />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/company/techdea/"
+                target="_blank"
+                rel="noreferrer"
+                className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#7C3AED] hover:text-white transition"
+              >
+                <FaLinkedin size={22} />
+              </a>
+
+              <a
+                href="https://whatsapp.com/channel/0029VbD90E2IyPtMvouUGP0w"
+                target="_blank"
+                rel="noreferrer"
+                className="w-14 h-14 rounded-full bg-white shadow flex items-center justify-center hover:bg-[#7C3AED] hover:text-white transition"
+              >
+                <FaWhatsapp size={22} />
+              </a>
+
             </div>
 
           </div>
 
         </div>
-      </section>
 
-      {/* CTA */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-20">
-        <div className="max-w-5xl mx-auto text-center px-6">
-
-          <h2 className="text-4xl font-bold">
-            Let's Build Something Great Together
-          </h2>
-
-          <p className="mt-5 text-gray-300">
-            Whether it's a website, software project, technical training,
-            or career guidance, Techdea is ready to help.
-          </p>
-
-        </div>
       </section>
     </>
   );
