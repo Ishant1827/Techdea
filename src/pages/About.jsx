@@ -1,168 +1,184 @@
+import { Link } from "react-router-dom";
+
 function About() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-24">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold">
-            About <span className="text-purple-400">Techdea</span>
+      {/* Hero */}
+
+      <section className="relative overflow-hidden bg-[#09090B] py-24">
+
+        <div className="absolute -top-32 -left-24 w-80 h-80 bg-purple-700/20 blur-3xl rounded-full"></div>
+
+        <div className="absolute -bottom-32 -right-24 w-80 h-80 bg-fuchsia-600/20 blur-3xl rounded-full"></div>
+
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+
+          <span className="inline-block px-5 py-2 rounded-full bg-[#18181B] border border-purple-600 text-[#A855F7] text-sm font-medium">
+            About Techdea Technologies
+          </span>
+
+          <h1 className="mt-8 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            Building Digital Products
+            <br />
+            That Create Impact
           </h1>
 
-          <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
-            Where Technology Meets Innovation. We build modern digital
-            solutions while empowering students and businesses through
-            practical learning and technology.
+          <p className="mt-8 max-w-3xl mx-auto text-slate-300 text-lg leading-8">
+            Techdea Technologies is a software company dedicated to building
+            websites, applications, enterprise solutions and providing
+            industry-oriented training that prepares students for real careers.
           </p>
+
         </div>
+
       </section>
 
-      {/* About Company */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+      {/* About */}
+
+      <section className="bg-[#111827] py-24">
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
 
           <div>
-            <h2 className="text-4xl font-bold text-slate-900 mb-6">
+
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=900"
+              alt="About Techdea"
+              className="rounded-3xl w-full shadow-2xl"
+            />
+
+          </div>
+
+          <div>
+
+            <h2 className="text-4xl font-bold text-white">
               Who We Are
             </h2>
 
-            <p className="text-slate-400 leading-8 mb-5">
-              Techdea is an IT company specializing in website development, web applications, custom software, and Python-based solutions. We also provide practical technical training to help students build real-world skills. Our mission is to deliver quality, innovation, and reliable technology solutions for businesses and individuals.</p>
-
-            <p className="text-slate-400 leading-8">
-            
+            <p className="mt-6 text-slate-300 leading-8">
+              Techdea Technologies helps startups, businesses and students by
+              delivering high-quality software solutions and practical
+              technology training. Our goal is to bridge the gap between
+              education and industry.
             </p>
-          </div>
 
-          <div className="bg-[#09090B] rounded-2xl p-10">
-            <h3 className="text-2xl font-bold mb-6">Quick Highlights</h3>
+            <p className="mt-6 text-slate-300 leading-8">
+              We believe learning should be practical, innovative and focused
+              on solving real-world problems.
+            </p>
 
-            <ul className="space-y-4 text-slate-400">
-              <li>100+ Students Mentored</li>
-              <li>20+ Real Projects Completed</li>
-              <li>Industry-Oriented Training</li>
-              <li>Web & Software Development</li>
-              <li>Career Guidance & Mentorship</li>
-              <li>Beginner Friendly Learning</li>
-            </ul>
           </div>
 
         </div>
+
       </section>
 
-      {/* Mission & Vision */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10">
+      {/* Mission Vision */}
 
-          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-8">
-            <h2 className="text-3xl font-bold mb-4 text-[#0B1120]">
-              Our Mission
-            </h2>
+      <section className="bg-[#09090B] py-24">
 
-            <p className="text-slate-400 leading-8">
-              To deliver high-quality technology solutions while mentoring
-              students through practical learning, real-world projects,
-              and career-focused training.
-            </p>
-          </div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-          <div className="bg-[#09090B] shadow-xl hover:shadow-2xl rounded-xl p-8">
-            <h2 className="text-3xl font-bold mb-4 text-[#0B1120]">
-              Our Vision
-            </h2>
+          <div className="grid md:grid-cols-2 gap-8">
 
-            <p className="text-slate-400 leading-8">
-              To become a trusted technology and training company that
-              empowers students, businesses, and aspiring developers
-              through innovation and practical skills.
-            </p>
+            <div className="bg-[#18181B] rounded-3xl border border-zinc-800 p-10 hover:border-purple-600 transition">
+
+              <h2 className="text-3xl font-bold text-white">
+                Our Mission
+              </h2>
+
+              <p className="mt-6 text-slate-300 leading-8">
+                Deliver innovative technology solutions while providing quality
+                education and practical training for future professionals.
+              </p>
+
+            </div>
+
+            <div className="bg-[#18181B] rounded-3xl border border-zinc-800 p-10 hover:border-purple-600 transition">
+
+              <h2 className="text-3xl font-bold text-white">
+                Our Vision
+              </h2>
+
+              <p className="mt-6 text-slate-300 leading-8">
+                Become one of India's most trusted technology companies by
+                empowering businesses and students through innovation.
+              </p>
+
+            </div>
+
           </div>
 
         </div>
+
       </section>
 
-      {/* Founder */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6 text-center">
+      {/* Why Choose */}
 
-          <h2 className="text-4xl font-bold mb-10">
-            Founder
+      <section className="bg-[#111827] py-24">
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          <h2 className="text-center text-4xl font-bold text-white">
+            Why Choose Techdea
           </h2>
 
-          <div className="max-w-3xl mx-auto">
-
-            <h3 className="text-3xl font-semibold text-purple-600">
-              Ishant Srivastava
-            </h3>
-
-            <p className="text-slate-400 mt-4 leading-8">
-              Founder of Techdea and passionate Full Stack Developer,
-              Technical Mentor, and Project Builder. Responsible for
-              project management, client communication, software
-              development, and mentoring over 100 students in the
-              technology field.
-            </p>
-
-          </div>
-
-        </div>
-      </section>
-
-      {/* Technologies */}
-      <section className="py-20 bg-[#09090B]">
-        <div className="max-w-7xl mx-auto px-6 text-center">
-
-          <h2 className="text-4xl font-bold mb-10">
-            Technologies We Use
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
 
             {[
-              "HTML5",
-              "CSS3",
-              "JavaScript",
-              "React",
-              "Python",
-              "Flask",
-              "Node.js",
-              "Express",
-              "MongoDB",
-              "MySQL",
-              "Git",
-              "GitHub",
-            ].map((tech) => (
+              "Real Industry Projects",
+              "Experienced Mentors",
+              "Internships",
+              "Career Guidance",
+            ].map((item) => (
+
               <div
-                key={tech}
-                className="bg-[#09090B] rounded-lg shadow p-5 font-semibold"
+                key={item}
+                className="bg-[#18181B] rounded-3xl border border-zinc-800 p-8 hover:border-purple-600 hover:-translate-y-2 transition-all duration-300"
               >
-                {tech}
+
+                <h3 className="text-xl font-semibold text-white">
+                  {item}
+                </h3>
+
+                <p className="mt-4 text-slate-300">
+                  Learn with practical experience and industry standards.
+                </p>
+
               </div>
+
             ))}
 
           </div>
 
         </div>
+
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-20">
-        <div className="max-w-5xl mx-auto text-center px-6">
 
-          <h2 className="text-4xl font-bold">
-            Let's Build Something Amazing Together
+      <section className="py-24 bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA]">
+
+        <div className="max-w-5xl mx-auto px-4 text-center">
+
+          <h2 className="text-4xl md:text-5xl font-bold text-white">
+            Ready To Work With Techdea?
           </h2>
 
-          <p className="mt-5 text-gray-300">
-            Whether you're looking for a website, software solution,
-            technical training, or career guidance, Techdea is here to
-            help you achieve your goals.
+          <p className="mt-6 text-slate-100 text-lg">
+            Let's build modern software, innovative products and successful
+            careers together.
           </p>
 
-          <button className="mt-8 bg-[#7C3AED] hover:bg-purple-600 px-8 py-3 rounded-lg font-semibold transition">
+          <Link
+            to="/contact"
+            className="inline-block mt-10 bg-white text-purple-700 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition"
+          >
             Contact Us
-          </button>
+          </Link>
 
         </div>
+
       </section>
     </>
   );

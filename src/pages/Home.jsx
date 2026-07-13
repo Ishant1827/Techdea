@@ -3,22 +3,31 @@ import Stats from "../components/home/Stats";
 import AboutPreview from "../components/home/AboutPreview";
 import ServicesPreview from "../components/home/ServicesPreview";
 import ProjectsPreview from "../components/home/ProjectsPreview";
-import WhyChooseUs from "../components/home/WhyChooseUs";
 import TrainingPreview from "../components/home/TrainingPreview";
+import WhyChooseUs from "../components/home/WhyChooseUs";
 import ContactCTA from "../components/home/ContactCTA";
 
 function Home() {
   return (
-    <>
+    <main className="overflow-x-hidden bg-white">
+
       <Hero />
+
       <Stats />
+
       <AboutPreview />
+
       <ServicesPreview />
+
       <ProjectsPreview />
-      <WhyChooseUs />
+
       <TrainingPreview />
+
+      <WhyChooseUs />
+
       <ContactCTA />
-    </>
+
+    </main>
   );
 }
 
