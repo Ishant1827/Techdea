@@ -1,25 +1,26 @@
 import { NavLink } from "react-router-dom";
+import hero from "../../assets/images/hero.png";
 
 function Hero() {
   return (
     <section
       className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('/src/assets/images/hero.png')",
+        backgroundImage: `url(${hero})`,
       }}
     >
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/55"></div>
+      <div className="absolute inset-0 bg-black/60"></div>
 
       {/* Purple Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
+      <div className="absolute inset-0 bg-linear-to-r from-black/80 via-black/50 to-transparent"></div>
 
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
+      <div className="relative z-10 max-w-7xl mx-auto w-full px-6 md:px-10">
 
         <div className="max-w-2xl">
 
-          <p className="uppercase tracking-[4px] text-[#C4B5FD] font-semibold">
+          <p className="uppercase tracking-[4px] text-purple-300 font-semibold">
             Where Technology Meets Innovation
           </p>
 
@@ -38,24 +39,24 @@ function Hero() {
 
           <p className="mt-8 text-lg md:text-xl text-gray-300 leading-8">
             Transforming ideas into powerful digital solutions through
-            modern software development, AI, cloud technologies,
-            automation, and industry-focused training.
+            modern software development, Artificial Intelligence,
+            Cloud Computing, Automation and Industry-focused Training.
           </p>
 
           <div className="flex flex-wrap gap-5 mt-10">
 
             <NavLink
               to="/services"
-              className="bg-[#7C3AED] hover:bg-[#9333EA] px-7 py-4 rounded-xl text-white font-semibold transition-all duration-300"
+              className="bg-[#7C3AED] hover:bg-[#9333EA] text-white px-7 py-4 rounded-xl font-semibold transition-all duration-300"
             >
               Explore Services
             </NavLink>
 
             <NavLink
-              to="/contact"
+              to="/projects"
               className="border border-white text-white hover:bg-white hover:text-[#7C3AED] px-7 py-4 rounded-xl font-semibold transition-all duration-300"
             >
-              Contact Us
+              View Projects
             </NavLink>
 
           </div>
