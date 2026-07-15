@@ -145,7 +145,7 @@ function Team() {
 
               <div>
 
-                <span className="inline-block bg-[#716c7a] text-[#7C3AED] px-4 py-2 rounded-full font-semibold">
+                <span className="inline-block bg-[#bcabdb] text-[#7C3AED] px-4 py-2 rounded-full font-semibold">
                   Founder & CEO
                 </span>
 

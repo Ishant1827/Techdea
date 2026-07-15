@@ -54,7 +54,7 @@ function Services() {
     <>
       {/* Hero */}
 
-      <section className="bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA] py-24">
+      <section className="bg-gradient-to-r from-[#2c0c61] via-[#2c0c61] to-[#2c0c61] py-24">
 
         <div className="max-w-7xl mx-auto px-4 text-center">
 
@@ -566,7 +566,7 @@ function Services() {
 
 </section>
 
-<section className="py-24 bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA]">
+<section className="py-24 bg-gradient-to-r from-[#2c0c61] via-[#2c0c61] to-[#2c0c61]">
 
   <div className="max-w-5xl mx-auto px-4 text-center">
 
