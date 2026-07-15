@@ -62,7 +62,7 @@ function Services() {
             Our Services
           </h1>
 
-          <p className="mt-6 text-purple-100 text-lg max-w-3xl mx-auto">
+          <p className="mt-6 text-white-100 text-lg max-w-3xl mx-auto">
             Techdea Technologies provides complete software development,
             technology consulting, AI solutions and digital transformation
             services for startups, businesses and enterprises.
@@ -80,7 +80,7 @@ function Services() {
 
           <div className="flex items-center gap-4 mb-10">
 
-            <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+            <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
               <FaLaptopCode />
             </div>
 
@@ -131,7 +131,7 @@ function Services() {
 
           <div className="flex items-center gap-4 mb-10">
 
-            <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+            <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
               <FaMobileAlt />
             </div>
 
@@ -182,7 +182,7 @@ function Services() {
 
           <div className="flex items-center gap-4 mb-10">
 
-            <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+            <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
               <FaRobot />
             </div>
 
@@ -234,7 +234,7 @@ function Services() {
 
     <div className="flex items-center gap-4 mb-10">
 
-      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+      <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
         <FaJava />
       </div>
 
@@ -289,7 +289,7 @@ function Services() {
 
     <div className="flex items-center gap-4 mb-10">
 
-      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+      <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
         <FaCloud />
       </div>
 
@@ -344,7 +344,7 @@ function Services() {
 
     <div className="flex items-center gap-4 mb-10">
 
-      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+      <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
         <FaDatabase />
       </div>
 
@@ -398,7 +398,7 @@ function Services() {
 
     <div className="flex items-center gap-4 mb-10">
 
-      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+      <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
         <FaPalette />
       </div>
 
@@ -455,7 +455,7 @@ function Services() {
 
     <div className="flex items-center gap-4 mb-10">
 
-      <div className="w-16 h-16 rounded-full bg-purple-100 flex items-center justify-center text-[#7C3AED] text-3xl">
+      <div className="w-16 h-16 rounded-full bg-white-100 flex items-center justify-center text-[#7C3AED] text-3xl">
         <FaCogs />
       </div>
 
@@ -574,7 +574,7 @@ function Services() {
       Let's Build Something Amazing Together
     </h2>
 
-    <p className="mt-6 text-lg text-purple-100">
+    <p className="mt-6 text-lg text-white-100">
       Whether you need software development, AI solutions, cloud services or
       technology consulting, Techdea Technologies is ready to help.
     </p>

@@ -1,68 +1,103 @@
-import { FaCode, FaPython, FaLaptopCode, FaUserTie } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
+import {
+  FaCode,
+  FaPython,
+  FaLaptopCode,
+  FaUserTie,
+  FaShieldAlt,
+  FaDatabase,
+  FaPalette,
+  FaCloud,
+} from "react-icons/fa";
 
 function TrainingPreview() {
   const trainings = [
     {
       icon: <FaCode />,
-      title: "Web Development",
-      desc: "HTML, CSS, JavaScript, React.js, Node.js and complete website development."
-    },
-    {
-      icon: <FaPython />,
-      title: "Python Programming",
-      desc: "Python from beginner to advanced with automation and real projects."
+      title: "Programming Languages",
+      desc: "C, C++, Java, Python, JavaScript and modern programming fundamentals.",
     },
     {
       icon: <FaLaptopCode />,
-      title: "Project Based Learning",
-      desc: "Build real-world projects and strengthen your portfolio."
+      title: "Web & Software Development",
+      desc: "HTML, CSS, JavaScript, React, MERN Stack, Custom Software & Mobile Apps.",
+    },
+    {
+      icon: <FaPython />,
+      title: "AI, Data & Cloud",
+      desc: "Artificial Intelligence, Machine Learning, Data Science, Cloud Computing and DevOps.",
+    },
+    {
+      icon: <FaShieldAlt />,
+      title: "Cyber Security",
+      desc: "Ethical Hacking, Network Security and Cyber Security fundamentals.",
+    },
+    {
+      icon: <FaDatabase />,
+      title: "Database Management",
+      desc: "SQL, MySQL, MongoDB, Database Design and Data Management.",
+    },
+    {
+      icon: <FaPalette />,
+      title: "UI / UX Design",
+      desc: "UI/UX Design, Figma, Canva, Graphic Design and User Experience.",
+    },
+    {
+      icon: <FaCloud />,
+      title: "Cloud & DevOps",
+      desc: "AWS, Azure, Docker, Kubernetes and DevOps practices.",
     },
     {
       icon: <FaUserTie />,
-      title: "Career Mentorship",
-      desc: "Resume building, LinkedIn optimization, interview preparation and career guidance."
-    }
+      title: "Career Development",
+      desc: "Internships, Live Projects, Resume Building, LinkedIn, Mock Interviews and Placement Assistance.",
+    },
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="py-24 bg-[#F8FAFC]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+        {/* Heading */}
 
         <div className="text-center">
-          <p className="text-purple-400 uppercase tracking-widest font-semibold">
-            Training & Mentorship
+
+          <p className="text-[#7C3AED] uppercase tracking-[4px] font-semibold">
+            Training Programs
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
-            Learn From Real Industry Experience
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
+            Learn In-Demand Skills with Industry Experts
           </h2>
 
-          <p className="text-gray-300 mt-6 max-w-3xl mx-auto">
-            Techdea focuses on practical learning through real-world projects,
-            industry guidance and one-to-one mentoring to prepare students
-            for internships and full-time careers.
+          <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-8">
+            Explore our industry-focused training programs designed for
+            students, professionals and businesses. Learn through live
+            projects, internships, certifications and expert mentorship.
           </p>
+
         </div>
 
-        <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8 mt-16">
+        {/* Training Cards */}
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
 
           {trainings.map((item, index) => (
 
             <div
               key={index}
-              className="bg-slate-800 rounded-2xl p-8 hover:-translate-y-2 transition duration-300"
+              className="bg-white rounded-2xl border border-purple-200 shadow-md hover:shadow-xl hover:border-[#7C3AED] hover:-translate-y-2 transition-all duration-300 p-8"
             >
 
-              <div className="text-5xl text-purple-400 mb-5">
+              <div className="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl text-[#7C3AED] mb-6">
                 {item.icon}
               </div>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-xl font-bold text-gray-900">
                 {item.title}
               </h3>
 
-              <p className="text-gray-300 mt-4 leading-7">
+              <p className="mt-4 text-gray-600 leading-7">
                 {item.desc}
               </p>
 
@@ -72,13 +107,15 @@ function TrainingPreview() {
 
         </div>
 
+        {/* Button */}
+
         <div className="text-center mt-14">
 
           <NavLink
             to="/training"
-            className="bg-[#7C3AED] hover:bg-[#9333EA] px-8 py-3 rounded-lg font-semibold transition"
+            className="inline-flex items-center bg-[#7C3AED] hover:bg-[#9333EA] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
           >
-            Explore Training
+            Explore All Training Programs
           </NavLink>
 
         </div>

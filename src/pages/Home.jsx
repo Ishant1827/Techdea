@@ -7,6 +7,7 @@ import TrainingPreview from "../components/home/TrainingPreview";
 import WhyChooseUs from "../components/home/WhyChooseUs";
 import ContactCTA from "../components/home/ContactCTA";
 
+
 function Home() {
   return (
     <main className="overflow-x-hidden bg-white">

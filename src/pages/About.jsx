@@ -7,13 +7,13 @@ function About() {
 
       <section className="relative overflow-hidden bg-[#09090B] py-24">
 
-        <div className="absolute -top-32 -left-24 w-80 h-80 bg-purple-700/20 blur-3xl rounded-full"></div>
+        <div className="absolute -top-32 -left-24 w-80 h-80 bg-white-700/20 blur-3xl rounded-full"></div>
 
         <div className="absolute -bottom-32 -right-24 w-80 h-80 bg-fuchsia-600/20 blur-3xl rounded-full"></div>
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-          <span className="inline-block px-5 py-2 rounded-full bg-[#18181B] border border-purple-600 text-[#A855F7] text-sm font-medium">
+          <span className="inline-block px-5 py-2 rounded-full bg-[#18181B] border border-white-600 text-[#A855F7] text-sm font-medium">
             About Techdea Technologies
           </span>
 
@@ -35,7 +35,7 @@ function About() {
 
       {/* About */}
 
-      <section className="bg-[#111827] py-24">
+      <section className="bg-[white] py-24">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
 
@@ -81,7 +81,7 @@ function About() {
 
           <div className="grid md:grid-cols-2 gap-8">
 
-            <div className="bg-[#18181B] rounded-3xl border border-zinc-800 p-10 hover:border-purple-600 transition">
+            <div className="bg-[#18181B] rounded-3xl border border-zinc-800 p-10 hover:border-white-600 transition">
 
               <h2 className="text-3xl font-bold text-white">
                 Our Mission
@@ -94,7 +94,7 @@ function About() {
 
             </div>
 
-            <div className="bg-[#18181B] rounded-3xl border border-zinc-800 p-10 hover:border-purple-600 transition">
+            <div className="bg-[#18181B] rounded-3xl border border-zinc-800 p-10 hover:border-white-600 transition">
 
               <h2 className="text-3xl font-bold text-white">
                 Our Vision
@@ -115,7 +115,7 @@ function About() {
 
       {/* Why Choose */}
 
-      <section className="bg-[#111827] py-24">
+      <section className="bg-[white] py-24">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -134,7 +134,7 @@ function About() {
 
               <div
                 key={item}
-                className="bg-[#18181B] rounded-3xl border border-zinc-800 p-8 hover:border-purple-600 hover:-translate-y-2 transition-all duration-300"
+                className="bg-[#18181B] rounded-3xl border border-zinc-800 p-8 hover:border-white-600 hover:-translate-y-2 transition-all duration-300"
               >
 
                 <h3 className="text-xl font-semibold text-white">
@@ -172,7 +172,7 @@ function About() {
 
           <Link
             to="/contact"
-            className="inline-block mt-10 bg-white text-purple-700 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition"
+            className="inline-block mt-10 bg-white text-white-700 px-8 py-4 rounded-xl font-semibold hover:bg-slate-100 transition"
           >
             Contact Us
           </Link>

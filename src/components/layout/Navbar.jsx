@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../assets/images/favicon.svg";
+import logo from "../../assets/images/logo.png";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,7 @@ function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#09090B] border-b border-zinc-800 shadow-lg">
+    <header className="sticky top-0 z-50 bg-[#11111a] border-b border-zinc-800 shadow-lg">
       <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
@@ -37,8 +37,8 @@ function Navbar() {
               Tech<span className="text-[#A855F7]">dea</span>
             </h1>
 
-            <p className="hidden lg:block text-xs text-slate-400">
-              Where Technology Meets Innovation
+            <p className="hidden lg:block text-xs text-slate-400 font-bold ">
+              Converts Ideas into Innovation
             </p>
           </div>
         </NavLink>
@@ -85,7 +85,7 @@ function Navbar() {
       {/* Mobile Menu */}
       <div
         className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[600px]" : "max-h-0"
+          isOpen ? "max-h-[150px]" : "max-h-0"
         }`}
       >
         <div className="bg-[#111118] border-t border-zinc-800">

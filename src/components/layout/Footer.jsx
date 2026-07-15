@@ -33,7 +33,7 @@ function Footer() {
 
   return (
     <>
-      <footer className="bg-[#09090B] border-t border-zinc-800">
+      <footer className="bg-[#11111a] border-b border-zinc-800 shadow-lg">
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 
@@ -48,9 +48,7 @@ function Footer() {
               </h2>
 
               <p className="text-slate-400 mt-5 leading-7">
-                Techdea Technologies delivers modern software,
-                websites, internships and industry-focused training
-                to help students and businesses grow with technology.
+                Techdea Technologies creates innovative software, responsive websites, internships, and industry-focused training programs to help students gain real-world experience and businesses thrive in the digital era.
               </p>
 
             </div>

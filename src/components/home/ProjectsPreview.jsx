@@ -1,4 +1,4 @@
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 
 function ProjectsPreview() {
@@ -7,97 +7,115 @@ function ProjectsPreview() {
     {
       title: "Online Test Portal",
       tech: "React • Node.js • MongoDB",
-      desc: "A complete online examination platform with authentication, tests and result management.",
+      desc: "Complete online examination platform with authentication, question bank, result management and admin dashboard.",
       github: "https://github.com/Ishant1827/Online-Test-Portal",
+      live: "#",
     },
     {
-      title: "EduMitra",
-      tech: "React • Express • MongoDB",
-      desc: "Educational platform for students, mentors and learning management.",
-      github: "https://github.com/Ishant1827/EduMitra",
-    },
-    {
-      title: "Certificate Portal",
+      title: "Indigo Trainings",
       tech: "React • Node.js",
-      desc: "Generate and verify digital certificates securely.",
-      github: "https://github.com/Ishant1827/Certificate-Portal",
+      desc: "Training management platform for courses, internships, certifications and student registration.",
+      github: "https://github.com/Ishant1827/Indigo_Trainings",
+      live: "#",
     },
     {
-      title: "Healthcare App",
-      tech: "React • Firebase",
-      desc: "Healthcare management application for patients and healthcare services.",
-      github: "https://github.com/Ishant1827/healthcare-app",
+      title: "Face Recognition (LBPH)",
+      tech: "Python • OpenCV",
+      desc: "AI-based face recognition system using the LBPH algorithm for secure identity verification.",
+      github: "https://github.com/Ishant1827/FaceRecognitionLBPH",
+      live: "#",
     },
     {
-      title: "Trader Analysis",
-      tech: "Python",
-      desc: "Analyze stock market trends using Python.",
-      github: "https://github.com/Ishant1827/Trader-Analysis",
-    },
-    {
-      title: "Real Estate AI Agent",
-      tech: "AI • React",
-      desc: "AI-powered assistant for property recommendations.",
-      github: "https://github.com/Ishant1827/real-estate-ai-agent",
+      title: "To-Do Application",
+      tech: "React",
+      desc: "Modern task management application for creating, organizing and tracking daily activities.",
+      github: "https://github.com/Ishant1827/to-do_app",
+      live: "#",
     },
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white">
+    <section className="py-24 bg-[#F8FAFC]">
 
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+        {/* Heading */}
 
         <div className="text-center">
 
-          <p className="uppercase tracking-widest text-purple-400 font-semibold">
+          <p className="text-[#7C3AED] uppercase tracking-[4px] font-semibold">
             Featured Projects
           </p>
 
-          <h2 className="text-5xl font-bold mt-4">
-            Our Latest Work
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
+            Our Featured Work
           </h2>
 
-          <p className="text-gray-300 mt-5 max-w-3xl mx-auto">
-            We build real-world software solutions, educational platforms,
-            AI applications, automation tools and business websites.
+          <p className="mt-6 max-w-3xl mx-auto text-lg text-gray-600 leading-8">
+            Explore some of our real-world software, AI and web development
+            projects built using modern technologies and industry best
+            practices.
           </p>
 
         </div>
 
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8 mt-16">
+        {/* Projects */}
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
 
           {projects.map((project, index) => (
 
             <div
               key={index}
-              className="bg-slate-800 rounded-2xl p-8 hover:-translate-y-3 transition duration-300 shadow-xl"
+              className="bg-white border border-purple-200 rounded-2xl shadow-md hover:shadow-xl hover:border-[#7C3AED] hover:-translate-y-2 transition-all duration-300 overflow-hidden"
             >
 
-              <div className="h-40 bg-slate-700 rounded-xl flex items-center justify-center mb-6">
+              {/* Project Header */}
 
-                <h3 className="text-2xl font-bold text-purple-400">
+              <div className="h-32 bg-gradient-to-r from-[#6D28D9] via-[#7C3AED] to-[#9333EA] flex items-center justify-center px-4">
+
+                <h3 className="text-2xl font-bold text-white text-center">
                   {project.title}
                 </h3>
 
               </div>
 
-              <p className="text-purple-400 text-sm">
-                {project.tech}
-              </p>
+              <div className="p-6">
 
-              <p className="text-gray-300 mt-4 leading-7">
-                {project.desc}
-              </p>
+                <p className="text-[#7C3AED] font-semibold text-sm">
+                  {project.tech}
+                </p>
 
-              <a
-                href={project.github}
-                target="_blank"
-                rel="noreferrer"
-                className="inline-flex items-center gap-2 mt-6 bg-[#7C3AED] hover:bg-[#9333EA] px-5 py-2 rounded-lg"
-              >
-                <FaGithub />
-                GitHub
-              </a>
+                <p className="mt-4 text-gray-600 leading-7">
+                  {project.desc}
+                </p>
+                                {/* Buttons */}
+
+                <div className="flex gap-3 mt-6">
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 bg-[#7C3AED] hover:bg-[#9333EA] text-white py-3 rounded-xl font-medium transition-all duration-300"
+                  >
+                    <FaGithub />
+                    GitHub
+                  </a>
+
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 flex items-center justify-center gap-2 border border-[#7C3AED] text-[#7C3AED] hover:bg-[#7C3AED] hover:text-white py-3 rounded-xl font-medium transition-all duration-300"
+                  >
+                    <FaExternalLinkAlt />
+                    Live
+                  </a>
+
+                </div>
+
+              </div>
 
             </div>
 
@@ -105,11 +123,13 @@ function ProjectsPreview() {
 
         </div>
 
+        {/* Bottom Button */}
+
         <div className="text-center mt-16">
 
           <NavLink
             to="/projects"
-            className="bg-[#09090B] text-slate-900 px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] hover:text-white transition"
+            className="inline-flex items-center bg-[#7C3AED] hover:bg-[#9333EA] text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300"
           >
             View All Projects
           </NavLink>

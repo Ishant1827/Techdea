@@ -1,104 +1,286 @@
 import { NavLink } from "react-router-dom";
-import { FaCheckCircle } from "react-icons/fa";
+import logo from "../../assets/images/logo.png";
+import {
+  FaCheckCircle,
+  FaUsers,
+  FaLaptopCode,
+  FaGraduationCap,
+  FaRocket,
+} from "react-icons/fa";
 
 function AboutPreview() {
   return (
-    <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-24">
-      <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <section className="py-20 bg-[#F8FAFC]">
 
-        {/* Left Side */}
-        <div>
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-          <p className="text-purple-400 uppercase tracking-widest font-semibold">
-            About Techdea
-          </p>
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
 
-          <h2 className="text-5xl font-bold mt-4">
-            Empowering Future Developers Through Innovation
-          </h2>
+          {/* Left Content */}
 
-          <p className="text-gray-300 mt-6 leading-8 text-lg">
-            Techdea is an emerging IT solutions and training company focused on
-            web development, software solutions, Python projects, technical
-            mentoring, and career guidance.
-          </p>
+          <div>
 
-          <p className="text-gray-300 mt-4 leading-8 text-lg">
-            We believe in practical learning through real-world projects,
-            teamwork, and continuous innovation. Our mission is to help
-            students, startups, and businesses achieve their technology goals.
-          </p>
+            <p className="text-[#7C3AED] uppercase tracking-[4px] font-semibold">
+              About Techdea
+            </p>
 
-          <div className="grid grid-cols-2 gap-4 mt-8">
+            <h2 className="mt-5 text-4xl md:text-5xl font-bold text-gray-900 leading-tight">
 
-            <div className="flex items-center gap-3">
-              <FaCheckCircle className="text-purple-400" />
-              <span>100+ Students Mentored</span>
+              Empowering Future Developers
+              <br />
+
+              Through Innovation
+
+            </h2>
+
+            <p className="mt-7 text-gray-600 text-lg leading-8">
+
+              Techdea Technologies is an emerging IT company dedicated to
+              providing innovative software solutions, web development,
+              AI-powered applications, technical training, and career
+              mentorship. We help students, startups, and businesses
+              transform ideas into impactful digital products.
+
+            </p>
+
+            <p className="mt-5 text-gray-600 text-lg leading-8">
+
+              Our focus is on practical learning, live industry projects,
+              modern technologies, and continuous innovation. Every solution
+              we build is designed with performance, scalability, and user
+              experience in mind.
+
+            </p>
+
+            {/* Highlights */}
+
+            <div className="grid sm:grid-cols-2 gap-5 mt-10">
+
+              <div className="flex items-start gap-3">
+
+                <FaCheckCircle className="text-[#7C3AED] text-xl mt-1" />
+
+                <div>
+
+                  <h4 className="font-semibold text-gray-900">
+                    100+ Students Mentored
+                  </h4>
+
+                  <p className="text-sm text-gray-600">
+                    Industry-oriented practical learning.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div className="flex items-start gap-3">
+
+                <FaCheckCircle className="text-[#7C3AED] text-xl mt-1" />
+
+                <div>
+
+                  <h4 className="font-semibold text-gray-900">
+                    25+ Live Projects
+                  </h4>
+
+                  <p className="text-sm text-gray-600">
+                    Real-world development experience.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div className="flex items-start gap-3">
+
+                <FaCheckCircle className="text-[#7C3AED] text-xl mt-1" />
+
+                <div>
+
+                  <h4 className="font-semibold text-gray-900">
+                    Career Guidance
+                  </h4>
+
+                  <p className="text-sm text-gray-600">
+                    Resume, portfolio and placement support.
+                  </p>
+
+                </div>
+
+              </div>
+
+              <div className="flex items-start gap-3">
+
+                <FaCheckCircle className="text-[#7C3AED] text-xl mt-1" />
+
+                <div>
+
+                  <h4 className="font-semibold text-gray-900">
+                    Industry Training
+                  </h4>
+
+                  <p className="text-sm text-gray-600">
+                    Learn modern technologies with experts.
+                  </p>
+
+                </div>
+
+              </div>
+
             </div>
 
-            <div className="flex items-center gap-3">
-              <FaCheckCircle className="text-purple-400" />
-              <span>20+ Live Projects</span>
-            </div>
+            {/* Buttons */}
 
-            <div className="flex items-center gap-3">
-              <FaCheckCircle className="text-purple-400" />
-              <span>Career Guidance</span>
-            </div>
+            <div className="flex flex-wrap gap-4 mt-10">
 
-            <div className="flex items-center gap-3">
-              <FaCheckCircle className="text-purple-400" />
-              <span>Industry Training</span>
+              <NavLink
+                to="/about"
+                className="bg-[#7C3AED] hover:bg-[#9333EA] text-white px-7 py-3 rounded-xl font-semibold transition-all duration-300"
+              >
+                Learn More
+              </NavLink>
+
+              <NavLink
+                to="/contact"
+                className="border border-[#7C3AED] text-[#7C3AED] hover:bg-[#7C3AED] hover:text-white px-7 py-3 rounded-xl font-semibold transition-all duration-300"
+              >
+                Contact Us
+              </NavLink>
+
             </div>
 
           </div>
 
-          <NavLink
-            to="/about"
-            className="inline-block mt-10 bg-[#7C3AED] hover:bg-[#9333EA] px-7 py-3 rounded-lg font-semibold transition"
-          >
-            Learn More
-          </NavLink>
+         {/* Right Side */}
 
-        </div>
+<div className="flex justify-center">
 
-        {/* Right Side */}
+  <div className="w-full max-w-lg bg-white rounded-3xl border border-purple-200 shadow-xl p-8">
 
-        <div className="flex justify-center">
+    <div className="text-center">
+  <div className="w-24 h-24 mx-auto rounded-full bg-gradient-to-r from-[#7C3AED] to-[#9333EA] flex items-center justify-center shadow-lg p-3">
 
-          <div className="bg-slate-800 rounded-3xl p-10 shadow-2xl w-full max-w-md">
+    <img
+  src={logo}
+  alt="Techdea Logo"
+  className="w-40 h-40 object-contain mx-auto drop-shadow-xl"
+/>
 
-            <h3 className="text-3xl font-bold text-purple-400">
-              Techdea
-            </h3>
+  </div>
 
-            <p className="mt-4 text-gray-300">
-              Where Technology Meets Innovation
-            </p>
+  <h3 className="mt-6 text-3xl font-bold text-gray-900">
+    Techdea Technologies
+  </h3>
 
-            <hr className="my-6 border-slate-600" />
+  <p className="mt-2 text-[#7C3AED] font-medium">
+    Where Technology Meets Innovation
+  </p>
 
-            <div className="space-y-5">
+</div>
+                
 
-              <div>
-                <h4 className="font-semibold">Founded By</h4>
-                <p className="text-gray-400">
-                  Ishant Srivastava
-                </p>
+              <div className="grid grid-cols-2 gap-5 mt-10">
+
+                <div className="bg-[#F8FAFC] rounded-2xl p-5 text-center border border-purple-100">
+
+                  <FaUsers className="mx-auto text-3xl text-[#7C3AED]" />
+
+                  <h4 className="mt-3 text-2xl font-bold text-gray-900">
+                    100+
+                  </h4>
+
+                  <p className="text-gray-600">
+                    Students
+                  </p>
+
+                </div>
+
+                <div className="bg-[#F8FAFC] rounded-2xl p-5 text-center border border-purple-100">
+
+                  <FaLaptopCode className="mx-auto text-3xl text-[#7C3AED]" />
+
+                  <h4 className="mt-3 text-2xl font-bold text-gray-900">
+                    25+
+                  </h4>
+
+                  <p className="text-gray-600">
+                    Projects
+                  </p>
+
+                </div>
+
+                <div className="bg-[#F8FAFC] rounded-2xl p-5 text-center border border-purple-100">
+
+                  <FaGraduationCap className="mx-auto text-3xl text-[#7C3AED]" />
+
+                  <h4 className="mt-3 text-2xl font-bold text-gray-900">
+                    Training
+                  </h4>
+
+                  <p className="text-gray-600">
+                    Internship
+                  </p>
+
+                </div>
+
+                <div className="bg-[#F8FAFC] rounded-2xl p-5 text-center border border-purple-100">
+
+                  <FaRocket className="mx-auto text-3xl text-[#7C3AED]" />
+
+                  <h4 className="mt-3 text-2xl font-bold text-gray-900">
+                    Future
+                  </h4>
+
+                  <p className="text-gray-600">
+                    Innovation
+                  </p>
+
+                </div>
+
               </div>
 
-              <div>
-                <h4 className="font-semibold">Experience</h4>
-                <p className="text-gray-400">
-                  Web Development, Python, Training & Mentoring
-                </p>
-              </div>
+              <div className="mt-10 border-t border-purple-200 pt-8">
 
-              <div>
-                <h4 className="font-semibold">Mission</h4>
-                <p className="text-gray-400">
-                  Building technology solutions while empowering beginners.
-                </p>
+                <div className="mb-6">
+
+                  <h4 className="font-semibold text-gray-900">
+                    Founder
+                  </h4>
+
+                  <p className="mt-2 text-gray-600">
+                    Ishant Srivastava
+                  </p>
+
+                </div>
+
+                <div className="mb-6">
+
+                  <h4 className="font-semibold text-gray-900">
+                    Expertise
+                  </h4>
+
+                  <p className="mt-2 text-gray-600 leading-7">
+                    Full Stack Development, Python, Artificial Intelligence,
+                    Technical Training, Career Mentoring and Software Solutions.
+                  </p>
+
+                </div>
+
+                <div>
+
+                  <h4 className="font-semibold text-gray-900">
+                    Our Mission
+                  </h4>
+
+                  <p className="mt-2 text-gray-600 leading-7">
+                    To empower students, startups and businesses with modern
+                    technology solutions, practical learning and innovative
+                    digital products that create lasting impact.
+                  </p>
+
+                </div>
+
               </div>
 
             </div>
@@ -108,6 +290,7 @@ function AboutPreview() {
         </div>
 
       </div>
+
     </section>
   );
 }

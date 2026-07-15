@@ -35,11 +35,11 @@ function Training() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-24">
+      <section className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h1 className="text-5xl md:text-6xl font-bold">
-            Training & <span className="text-purple-400">Mentorship</span>
+            Training & <span className="text-white-400">Mentorship</span>
           </h1>
 
           <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
@@ -170,7 +170,7 @@ function Training() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-20">
+      <section className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-20">
         <div className="max-w-5xl mx-auto text-center px-6">
 
           <h2 className="text-4xl font-bold">
@@ -182,7 +182,7 @@ function Training() {
             training, mentorship, and real-world projects.
           </p>
 
-          <button className="mt-8 bg-purple-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] transition">
+          <button className="mt-8 bg-white-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] transition">
             Enroll Now
           </button>
 

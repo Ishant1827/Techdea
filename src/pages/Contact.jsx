@@ -19,7 +19,7 @@ function Contact() {
             Contact Us
           </h1>
 
-          <p className="mt-6 text-lg max-w-3xl mx-auto text-purple-100">
+          <p className="mt-6 text-lg max-w-3xl mx-auto text-white-100">
             We'd love to hear from you. Whether you have a project,
             business inquiry, internship question or collaboration idea,
             our team is ready to help.

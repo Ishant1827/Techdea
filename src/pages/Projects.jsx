@@ -117,7 +117,7 @@ function Projects() {
             Our Projects
           </h1>
 
-          <p className="mt-6 max-w-3xl mx-auto text-lg text-purple-100">
+          <p className="mt-6 max-w-3xl mx-auto text-lg text-white-100">
 
             Explore our portfolio of real-world applications,
             AI solutions, automation tools,
@@ -223,7 +223,7 @@ function Projects() {
 
                 <div className="p-7">
 
-                  <span className="inline-block px-3 py-1 rounded-full bg-purple-100 text-[#7C3AED] text-sm font-semibold">
+                  <span className="inline-block px-3 py-1 rounded-full bg-white-100 text-[#7C3AED] text-sm font-semibold">
                     {project.category}
                   </span>
 
@@ -243,7 +243,7 @@ function Projects() {
 
                       <span
                         key={tech}
-                        className="px-3 py-1 rounded-full bg-purple-50 text-[#7C3AED] text-sm font-medium"
+                        className="px-3 py-1 rounded-full bg-white-50 text-[#7C3AED] text-sm font-medium"
                       >
                         {tech}
                       </span>
@@ -472,7 +472,7 @@ function Projects() {
             Have a Project Idea?
           </h2>
 
-          <p className="mt-6 text-lg text-purple-100 max-w-3xl mx-auto">
+          <p className="mt-6 text-lg text-white-100 max-w-3xl mx-auto">
             Whether you need a website, software, AI solution or automation,
             Techdea Technologies is ready to transform your ideas into reality.
           </p>

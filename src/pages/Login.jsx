@@ -29,7 +29,7 @@ function Login() {
             <input
               type="email"
               placeholder="Enter your email"
-              className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-white-500"
             />
 
           </div>
@@ -43,7 +43,7 @@ function Login() {
             <input
               type="password"
               placeholder="Enter your password"
-              className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-purple-500"
+              className="w-full border rounded-lg px-4 py-3 outline-none focus:ring-2 focus:ring-white-500"
             />
 
           </div>
@@ -62,7 +62,7 @@ function Login() {
 
             <a
               href="#"
-              className="text-purple-600 hover:underline"
+              className="text-white-600 hover:underline"
             >
               Forgot Password?
             </a>
@@ -70,7 +70,7 @@ function Login() {
           </div>
 
           <button
-            className="w-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-3 rounded-lg hover:bg-[#7C3AED] hover:text-black transition"
+            className="w-full bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-3 rounded-lg hover:bg-[#7C3AED] hover:text-black transition"
           >
             Login
           </button>
@@ -83,7 +83,7 @@ function Login() {
 
           <Link
             to="/"
-            className="text-purple-600 font-semibold hover:underline"
+            className="text-white-600 font-semibold hover:underline"
           >
             Home
           </Link>

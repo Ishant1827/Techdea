@@ -5,7 +5,7 @@ function Dashboard() {
     <section className="min-h-screen bg-[#09090B]">
 
       {/* Header */}
-      <div className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-5 px-8 flex justify-between items-center">
+      <div className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-5 px-8 flex justify-between items-center">
 
         <h1 className="text-3xl font-bold">
           Techdea Admin Dashboard
@@ -13,7 +13,7 @@ function Dashboard() {
 
         <Link
           to="/"
-          className="bg-purple-600 text-black px-5 py-2 rounded-lg font-semibold hover:bg-[#7C3AED] transition"
+          className="bg-white-600 text-black px-5 py-2 rounded-lg font-semibold hover:bg-[#7C3AED] transition"
         >
           Logout
         </Link>
@@ -89,19 +89,19 @@ function Dashboard() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
+            <button className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               Manage Projects
             </button>
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
+            <button className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               Manage Services
             </button>
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
+            <button className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               View Messages
             </button>
 
-            <button className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
+            <button className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-4 rounded-lg hover:bg-[#7C3AED] hover:text-black transition">
               Manage Team
             </button>
 

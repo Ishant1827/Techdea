@@ -35,11 +35,11 @@ function Team() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-24">
+      <section className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-24">
         <div className="max-w-7xl mx-auto px-6 text-center">
 
           <h1 className="text-5xl md:text-6xl font-bold">
-            Meet Our <span className="text-purple-400">Team</span>
+            Meet Our <span className="text-white-400">Team</span>
           </h1>
 
           <p className="mt-6 text-lg text-gray-300 max-w-3xl mx-auto">
@@ -57,7 +57,7 @@ function Team() {
 
           <div className="bg-[#09090B] rounded-2xl shadow-xl hover:shadow-2xl p-10 text-center">
 
-            <div className="w-36 h-36 mx-auto rounded-full bg-purple-600 flex items-center justify-center text-5xl font-bold text-white">
+            <div className="w-36 h-36 mx-auto rounded-full bg-white-600 flex items-center justify-center text-5xl font-bold text-white">
               IS
             </div>
 
@@ -65,7 +65,7 @@ function Team() {
               Ishant Srivastava
             </h2>
 
-            <p className="text-purple-600 text-xl mt-2">
+            <p className="text-white-600 text-xl mt-2">
               Founder & Manager
             </p>
 
@@ -101,7 +101,7 @@ function Team() {
                 key={index}
                 className="bg-[#09090B] rounded-xl shadow-xl hover:shadow-2xl p-8 hover:shadow-2xl transition"
               >
-                <div className="w-20 h-20 rounded-full bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white flex items-center justify-center text-2xl font-bold">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white flex items-center justify-center text-2xl font-bold">
                   {member.name.charAt(0)}
                 </div>
 
@@ -109,7 +109,7 @@ function Team() {
                   {member.name}
                 </h3>
 
-                <p className="text-purple-600 font-semibold mt-2">
+                <p className="text-white-600 font-semibold mt-2">
                   {member.role}
                 </p>
 
@@ -168,7 +168,7 @@ function Team() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white py-20">
+      <section className="bg-gradient-to-r from-white-700 via-white-600 to-white-500 text-white py-20">
         <div className="max-w-5xl mx-auto text-center px-6">
 
           <h2 className="text-4xl font-bold">
@@ -180,7 +180,7 @@ function Team() {
             eager to learn, collaborate, and build impactful technology solutions.
           </p>
 
-          <button className="mt-8 bg-purple-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] transition">
+          <button className="mt-8 bg-white-600 text-black px-8 py-3 rounded-lg font-semibold hover:bg-[#7C3AED] transition">
             Join Techdea
           </button>
 

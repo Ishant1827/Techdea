@@ -12,75 +12,80 @@ function WhyChooseUs() {
     {
       icon: <FaUserGraduate />,
       title: "100+ Students Mentored",
-      desc: "Helping beginners build confidence, technical skills and successful careers.",
+      desc: "Helping students and professionals build technical skills through practical learning.",
     },
     {
       icon: <FaLaptopCode />,
-      title: "Real Project Experience",
-      desc: "Learn by building practical industry-level projects instead of only theory.",
+      title: "Real-World Projects",
+      desc: "Gain hands-on experience by working on industry-oriented live projects.",
     },
     {
       icon: <FaProjectDiagram />,
-      title: "Modern Technologies",
-      desc: "Work with React, Node.js, Python, MongoDB, AI and latest web technologies.",
+      title: "Latest Technologies",
+      desc: "Learn React, MERN, Python, AI, Cloud Computing, DevOps and more.",
     },
     {
       icon: <FaHandshake />,
       title: "Beginner Friendly",
-      desc: "Perfect guidance for school students, college students and freshers.",
+      desc: "Easy-to-follow guidance for school students, college students and freshers.",
     },
     {
       icon: <FaRocket />,
       title: "Career Growth",
-      desc: "Resume building, interview preparation and career mentoring.",
+      desc: "Resume building, portfolio development, mock interviews and placement support.",
     },
     {
       icon: <FaHeadset />,
       title: "Lifetime Support",
-      desc: "Continuous guidance even after training and project completion.",
+      desc: "Continuous mentorship and technical guidance even after training completion.",
     },
   ];
 
   return (
-    <section className="py-24 bg-[#09090B]">
-      <div className="max-w-7xl mx-auto px-8">
+    <section className="py-24 bg-[#F8FAFC]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
+
+        {/* Heading */}
 
         <div className="text-center">
 
-          <p className="text-purple-600 uppercase tracking-widest font-semibold">
+          <p className="text-[#7C3AED] uppercase tracking-[4px] font-semibold">
             Why Choose Techdea
           </p>
 
-          <h2 className="text-5xl font-bold text-slate-900 mt-3">
+          <h2 className="mt-4 text-4xl md:text-5xl font-bold text-gray-900">
             Building Skills. Creating Opportunities.
           </h2>
 
-          <p className="text-slate-400 mt-5 max-w-3xl mx-auto">
-            We believe technology should be practical, accessible and
-            career-oriented. Our goal is to help students and businesses
-            achieve success through innovation.
+          <p className="mt-6 text-gray-600 max-w-3xl mx-auto text-lg leading-8">
+            We combine innovation, practical learning and modern technology to
+            help students, startups and businesses achieve long-term success.
           </p>
 
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
+        {/* Cards */}
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16">
 
           {features.map((feature, index) => (
 
             <div
               key={index}
-              className="bg-[#09090B] rounded-2xl p-8 shadow-xl hover:shadow-2xl hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+              className="bg-white rounded-2xl border border-purple-100 shadow-md hover:shadow-xl hover:border-[#7C3AED] hover:-translate-y-2 transition-all duration-300 p-8"
             >
 
-              <div className="text-5xl text-purple-600 mb-6">
+              <div className="w-16 h-16 rounded-2xl bg-purple-100 flex items-center justify-center text-3xl text-[#7C3AED]">
+
                 {feature.icon}
+
               </div>
 
-              <h3 className="text-2xl font-bold text-slate-900">
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
                 {feature.title}
               </h3>
 
-              <p className="text-slate-400 mt-4 leading-7">
+              <p className="mt-4 text-gray-600 leading-7">
                 {feature.desc}
               </p>
 

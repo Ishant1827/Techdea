@@ -2,57 +2,63 @@ import { NavLink } from "react-router-dom";
 
 function Hero() {
   return (
-    <section className="bg-gradient-to-r from-purple-700 via-purple-600 to-purple-500 text-white min-h-[90vh] flex items-center">
-      <div className="max-w-7xl mx-auto px-8 grid md:grid-cols-2 gap-10 items-center">
+    <section
+      className="relative min-h-screen flex items-center bg-cover bg-center bg-no-repeat"
+      style={{
+        backgroundImage: "url('/src/assets/images/hero.png')",
+      }}
+    >
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/55"></div>
 
-        {/* Left Content */}
-        <div>
+      {/* Purple Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent"></div>
 
-          <p className="text-purple-400 font-semibold tracking-widest uppercase">
+      {/* Content */}
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10 w-full">
+
+        <div className="max-w-2xl">
+
+          <p className="uppercase tracking-[4px] text-[#C4B5FD] font-semibold">
             Where Technology Meets Innovation
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold mt-5 leading-tight">
+          <h1 className="mt-5 text-5xl md:text-7xl font-extrabold leading-tight text-white">
             Build Your
-            <span className="text-purple-400"> Digital Future </span>
+            <br />
+
+            <span className="text-[#A855F7]">
+              Digital Future
+            </span>
+
+            <br />
+
             With Techdea
           </h1>
 
-          <p className="text-gray-300 mt-6 text-lg leading-8">
-            We provide modern web development, Python solutions,
-            career mentoring, technical training, and software
-            development services for students, startups, and businesses.
+          <p className="mt-8 text-lg md:text-xl text-gray-300 leading-8">
+            Transforming ideas into powerful digital solutions through
+            modern software development, AI, cloud technologies,
+            automation, and industry-focused training.
           </p>
 
-          <div className="flex gap-5 mt-8">
+          <div className="flex flex-wrap gap-5 mt-10">
 
             <NavLink
               to="/services"
-              className="bg-[#7C3AED] hover:bg-[#9333EA] px-6 py-3 rounded-lg font-semibold transition"
+              className="bg-[#7C3AED] hover:bg-[#9333EA] px-7 py-4 rounded-xl text-white font-semibold transition-all duration-300"
             >
               Explore Services
             </NavLink>
 
             <NavLink
-              to="/projects"
-              className="border border-purple-500 px-6 py-3 rounded-lg hover:bg-[#7C3AED] transition"
+              to="/contact"
+              className="border border-white text-white hover:bg-white hover:text-[#7C3AED] px-7 py-4 rounded-xl font-semibold transition-all duration-300"
             >
-              View Projects
+              Contact Us
             </NavLink>
 
           </div>
-
-        </div>
-
-        {/* Right Side */}
-
-        <div className="flex justify-center">
-
-          <img
-            src="/src/assets/images/logo.png"
-            alt="Techdea"
-            className="w-96"
-          />
 
         </div>
 
