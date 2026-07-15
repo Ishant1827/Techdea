@@ -17,109 +17,192 @@ function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-[#11111a] border-b border-zinc-800 shadow-lg">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-20 px-4 sm:px-6 lg:px-8">
+    <>
+      {/* Navbar */}
 
-        {/* Logo */}
-        <NavLink
-          to="/"
-          className="flex items-center gap-3"
+      <header className="sticky top-0 z-50 bg-[#09090B]/95 backdrop-blur-md border-b border-purple-900">
+
+        <nav className="max-w-7xl mx-auto flex items-center justify-between h-20 px-6">
+
+          {/* Logo */}
+
+          <NavLink
+            to="/"
+            onClick={() => setIsOpen(false)}
+            className="flex items-center gap-3"
+          >
+
+            <img
+              src={logo}
+              alt="Techdea"
+              className="w-12 h-12 object-contain"
+            />
+
+            <div>
+
+              <h1 className="text-2xl font-bold text-white">
+                Tech<span className="text-[#A855F7]">dea</span>
+              </h1>
+
+              <p className="hidden lg:block text-xs text-slate-400">
+                Converts Ideas Into Innovation
+              </p>
+
+            </div>
+
+          </NavLink>
+
+          {/* Desktop Menu */}
+
+          <ul className="hidden lg:flex items-center gap-8">
+
+            {navLinks.map((item) => (
+
+              <li key={item.name}>
+
+                <NavLink
+                  to={item.path}
+                  className={({ isActive }) =>
+                    `font-medium transition ${
+                      isActive
+                        ? "text-[#A855F7]"
+                        : "text-white hover:text-[#A855F7]"
+                    }`
+                  }
+                >
+                  {item.name}
+                </NavLink>
+
+              </li>
+
+            ))}
+
+          </ul>
+
+          {/* Desktop Login */}
+
+          <NavLink
+            to="/login"
+            className="hidden lg:block bg-[#7C3AED] hover:bg-[#9333EA] text-white px-6 py-3 rounded-xl font-semibold transition"
+          >
+            Login
+          </NavLink>
+
+          {/* Mobile Menu Button */}
+
+          <button
+            onClick={() => setIsOpen(true)}
+            className="lg:hidden text-white text-3xl"
+          >
+            <FaBars />
+          </button>
+
+        </nav>
+
+      </header>
+            {/* Mobile Menu Overlay */}
+
+      <div
+        className={`fixed inset-0 z-[999] lg:hidden transition-all duration-300 ${
+          isOpen
+            ? "opacity-100 visible"
+            : "opacity-0 invisible"
+        }`}
+      >
+
+        {/* Background */}
+
+        <div
+          className="absolute inset-0 bg-black/70 backdrop-blur-sm"
           onClick={() => setIsOpen(false)}
+        ></div>
+
+        {/* Drawer */}
+
+        <div
+          className={`absolute top-0 right-0 w-80 max-w-full h-screen bg-[#11111A] shadow-2xl transition-transform duration-300 overflow-y-auto ${
+            isOpen ? "translate-x-0" : "translate-x-full"
+          }`}
         >
-          <img
-            src={logo}
-            alt="Techdea Logo"
-            className="w-10 h-10 md:w-12 md:h-12"
-          />
 
-          <div>
-            <h1 className="text-xl md:text-2xl font-bold text-white">
-              Tech<span className="text-[#A855F7]">dea</span>
-            </h1>
+          {/* Header */}
 
-            <p className="hidden lg:block text-xs text-slate-400 font-bold ">
-              Converts Ideas into Innovation
-            </p>
+          <div className="flex items-center justify-between p-6 border-b border-zinc-800">
+
+            <div className="flex items-center gap-3">
+
+              <img
+                src={logo}
+                alt="Techdea"
+                className="w-11 h-11 object-contain"
+              />
+
+              <div>
+
+                <h2 className="text-xl font-bold text-white">
+                  Tech<span className="text-[#A855F7]">dea</span>
+                </h2>
+
+                <p className="text-xs text-slate-400">
+                  Where Technology Meets Innovation
+                </p>
+
+              </div>
+
+            </div>
+
+            <button
+              onClick={() => setIsOpen(false)}
+              className="text-white text-2xl hover:text-[#A855F7] transition"
+            >
+              <FaTimes />
+            </button>
+
           </div>
-        </NavLink>
 
-        {/* Desktop Menu */}
-        <ul className="hidden lg:flex items-center gap-8">
+          {/* Navigation */}
 
-          {navLinks.map((item) => (
-            <li key={item.name}>
+          <div className="flex flex-col py-6">
+
+            {navLinks.map((item) => (
+
               <NavLink
+                key={item.name}
                 to={item.path}
+                onClick={() => setIsOpen(false)}
                 className={({ isActive }) =>
-                  `font-medium transition duration-300 ${
+                  `px-7 py-4 text-lg font-medium transition-all duration-300 ${
                     isActive
-                      ? "text-[#A855F7]"
-                      : "text-slate-300 hover:text-[#A855F7]"
+                      ? "bg-[#7C3AED]/20 text-[#A855F7] border-l-4 border-[#A855F7]"
+                      : "text-white hover:bg-zinc-900 hover:text-[#A855F7]"
                   }`
                 }
               >
                 {item.name}
               </NavLink>
-            </li>
-          ))}
 
-        </ul>
+            ))}
 
-        {/* Desktop Login */}
-        <NavLink
-          to="/login"
-          className="hidden lg:block bg-[#7C3AED] hover:bg-[#9333EA] text-white px-5 py-2.5 rounded-xl font-semibold transition"
-        >
-          Login
-        </NavLink>
+            {/* Login Button */}
 
-        {/* Mobile Menu Button */}
-        <button
-          className="lg:hidden text-white text-2xl"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <FaTimes /> : <FaBars />}
-        </button>
-      </nav>
+            <div className="px-6 mt-6">
 
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ${
-          isOpen ? "max-h-[150px]" : "max-h-0"
-        }`}
-      >
-        <div className="bg-[#111118] border-t border-zinc-800">
+              <NavLink
+                to="/login"
+                onClick={() => setIsOpen(false)}
+                className="block w-full text-center bg-[#7C3AED] hover:bg-[#9333EA] text-white py-3 rounded-xl font-semibold transition"
+              >
+                Login
+              </NavLink>
 
-          {navLinks.map((item) => (
-            <NavLink
-              key={item.name}
-              to={item.path}
-              onClick={() => setIsOpen(false)}
-              className={({ isActive }) =>
-                `block px-6 py-4 transition ${
-                  isActive
-                    ? "text-[#A855F7] bg-zinc-900"
-                    : "text-slate-300 hover:bg-zinc-900 hover:text-[#A855F7]"
-                }`
-              }
-            >
-              {item.name}
-            </NavLink>
-          ))}
+            </div>
 
-          <div className="p-5">
-            <NavLink
-              to="/login"
-              onClick={() => setIsOpen(false)}
-              className="block text-center bg-[#7C3AED] hover:bg-[#9333EA] text-white py-3 rounded-xl font-semibold transition"
-            >
-              Login
-            </NavLink>
           </div>
+                  </div>
 
-        </div>
       </div>
-    </header>
+
+    </>
   );
 }
 
