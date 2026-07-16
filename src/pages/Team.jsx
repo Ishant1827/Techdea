@@ -12,6 +12,7 @@ import ayush from "../assets/team/ayush.jpg";
 import misthi from "../assets/team/misthi.png";
 import anandi from "../assets/team/anandi.png";
 import ananya from "../assets/team/ananya.png";
+import shashi from "../assets/team/shashi.png";
 
 function Team() {
 
@@ -94,6 +95,13 @@ function Team() {
       role: "AIML Technical Assistant",
       image: anchal,
       linkedin: "https://www.linkedin.com/in/anchal-singh-5b2517397?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    },
+
+    {
+      name: "Shashi Singh",
+      role: "Frontend Developer",
+      image: shashi,
+      linkedin: "https://www.linkedin.com/in/shashi-singh-6a6141363/",
     },
 
   ];
